@@ -1,0 +1,94 @@
+.Projects-Table {
+}
+
+.Projects-Table  .project-table {
+    padding: 10px;
+}
+
+.Projects-Table  .project-table:not(:last-child) {
+    border-bottom: 1px solid rgb(219, 210, 210);
+}
+
+.Projects-Table .project-table  .project-title span,
+.Projects-Table .project-table .project-price span, 
+.Projects-Table .project-table .project-status span {
+    font-weight: bold;
+}
+
+.Projects-Table .project-head div:not(:first-child,:last-child),
+.Projects-Table > .project-table > div:not(:first-child,:last-child) {
+    text-align: center;
+}
+
+.Projects-Table .project-head div span {
+    text-transform: uppercase;
+}
+
+.Projects-Table > .project-table > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.Projects-Table .project-table .project-info img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Projects-Table  .project-head div span,
+.Projects-Table  .project-table  .project-status span ,
+.Projects-Table  .project-table .project-rate span {
+    opacity: var(--opacity);
+}
+
+.Projects-Table  .project-head div span {
+    font-size: 10px;
+}
+
+.Projects-Table  .project-table .project-price span,
+.Projects-Table  .project-table .project-status span,
+.Projects-Table  .project-table .project-rate span {
+    font-size: 12px;
+}
+
+.Projects-Table  .project-head div:last-child, 
+.Projects-Table  .project-table  .project-icon {
+    text-align: right;
+}
+
+.Projects-Table .project-table .project-icon svg {
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+.Projects-Table > .project-table .project-status span {
+    font-size: 14px;
+}
+
+.Projects-Table  .project-table .project-rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Projects-Table  .project-table .project-rate span {
+    display: inline-block;
+}
+
+.Projects-Table  .project-table .project-rate .rate {
+    margin-right: 15px;
+    width: 20px;
+}
+
+.Projects-Table  .project-table .project-rate span:last-child {
+    background-color: #ddd;
+    width: 150px;
+    height: 6px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.Projects-Table  .project-table .project-rate span:last-child span {
+    position: absolute;
+    left: 0;
+    height: 100%;
+}

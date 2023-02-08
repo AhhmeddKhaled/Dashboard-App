@@ -1,0 +1,73 @@
+.fixed {
+    position: fixed;
+    z-index: 1000;
+    height: 100px;
+    width: 77%;
+    transition: .3s;
+    height: 80px;
+    top: 5px;
+    border-radius: var(--border-radius);
+}
+.fixedPadding {
+    padding: 80px;
+}
+.navbar {
+    background-color: transparent !important;
+    border-radius: 10px;
+    height: 100%;
+    padding:  0 15px !important;
+    color: transparent;
+    box-shadow: none !important;
+    color: inherit;
+}
+.navbar  .row {
+    width: 40%;
+}
+.navbar .row:first-child div {
+    display: flex;
+    align-items: center;
+}
+.navbar .row:first-child div svg {
+    opacity: .8;
+    width: 20px;
+    margin-top: 2px;
+}
+.navbar .row:first-child div h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.navbar .row:last-child {
+    justify-content: center;
+}
+.navbar .row:last-child div:first-child {
+    padding: 10px;
+    text-align: right;
+}
+.navbar .row:last-child div:first-child input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid rgb(112, 107, 107);
+    outline: none;
+    border-radius: 10px;
+    opacity: .4;
+    background-color: transparent;
+}
+.navbar .row:last-child div:first-child input::placeholder {
+    text-transform: capitalize;
+    opacity: .6;
+}
+.navbar .row:last-child div:first-child input:focus::placeholder {
+    opacity: 0;
+} 
+
+.navbar .row:last-child div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .row:last-child div:last-child svg {
+    margin: 0 6px;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}

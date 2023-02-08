@@ -1,0 +1,150 @@
+{
+    "BarChart": [
+        {
+            "id": 1,
+            "rate": 50,
+            "year": "M"
+        },
+        {
+            "id": 2,
+            "rate": 20,
+            "year": "T"
+        },
+        {
+            "id": 3,
+            "rate": 10,
+            "year": "W"
+        },
+        {
+            "id": 4,
+            "rate": 20,
+            "year": "T"
+        },
+        {
+            "id": 5,
+            "rate": 50,
+            "year": "F"
+        },
+        {
+            "id": 6,
+            "rate": 10,
+            "year": "S"
+        },
+        {
+            "id": 7,
+            "rate": 40,
+            "year": "S"
+        }
+    ],
+    "LineChartOne": [
+        {
+            "id": 1,
+            "rate": 50,
+            "year": "Apr"
+        },
+        {
+            "id": 2,
+            "rate": 40,
+            "year": "May"
+        },
+        {
+            "id": 3,
+            "rate": 300,
+            "year": "Jun"
+        },
+        {
+            "id": 4,
+            "rate": 350,
+            "year": "Jul"
+        },
+        {
+            "id": 5,
+            "rate": 500,
+            "year": "Auj"
+        },
+        {
+            "id": 6,
+            "rate": 350,
+            "year": "Seb"
+        },
+        {
+            "id": 7,
+            "rate": 200,
+            "year": "Oct"
+        },
+        {
+            "id": 8,
+            "rate": 230,
+            "year": "Nov"
+        },
+        {
+            "id": 9,
+            "rate": 500,
+            "year": "Des"
+        }
+    ],
+    "LineChartTwo": [
+        {
+            "id": 1,
+            "rate": 50,
+            "year": "Apr"
+        },
+        {
+            "id": 2,
+            "rate": 40,
+            "year": "May"
+        },
+        {
+            "id": 3,
+            "rate": 300,
+            "year": "Jun"
+        },
+        {
+            "id": 4,
+            "rate": 200,
+            "year": "Jul"
+        },
+        {
+            "id": 5,
+            "rate": 500,
+            "year": "Auj"
+        },
+        {
+            "id": 6,
+            "rate": 250,
+            "year": "Seb"
+        },
+        {
+            "id": 7,
+            "rate": 400,
+            "year": "Oct"
+        },
+        {
+            "id": 8,
+            "rate": 230,
+            "year": "Nov"
+        },
+        {
+            "id": 9,
+            "rate": 500,
+            "year": "Des"
+        }
+    ],
+    "data": [
+        {
+            "title": "website views",
+            "parag": "Last Campaign Performance",
+            "day": "campaign sent 2 days ago"
+        },
+        {
+            "title": "daily sales",
+            "parag": "(+15%) increase in today sales.",
+            "day": "updated 4 min ago"
+        },
+        {
+            "title": "completed tasks",
+            "parag": "Last Campaign Performance",
+            "day": "just updated"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+.signIn-nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+    margin: 0 !important;
+    width: 90% !important;
+}
+
+.signIn-nav div:first-child h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.signIn-nav div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn-nav div:nth-child(2)>span {
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    opacity: var(--opacity);
+    cursor: pointer;
+}
+
+.signIn-nav div:nth-child(2)>span svg {
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+    margin-top: -4px;
+}
+
+.signIn-nav div:nth-child(2)>span:last-child svg {
+    width: 25px;
+    height: 25px;
+    margin-top: 0;
+}
+
+.signIn-nav div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.signIn-nav div:last-child button {
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}

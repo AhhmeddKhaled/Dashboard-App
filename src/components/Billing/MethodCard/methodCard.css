@@ -1,0 +1,72 @@
+.method {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: var(--section-padding);
+    margin: var(--section-margin) 0 0 0 !important;
+}
+.method .method-info,
+.method .method-cards  {
+    margin: 0;
+    padding: 10px;
+}
+.method .method-info div {
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.method .method-info .payment span {
+    font-size: 18px;
+    font-weight: bold;
+}
+.method .method-info .new-card {
+    justify-content: flex-end;
+}
+.method .method-info .new-card span {
+    background-color: rgb(25, 25, 25);
+    padding: 8px 10px;
+    border-radius: var(--border-radius);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.method .method-info .new-card span svg {
+    margin: -3px 0 0 0;
+    width: 20px;
+    height: 20px;
+}
+.method .method-cards  {
+    justify-content: space-between;
+}
+.method .method-cards  .methodCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: var(--border-radius);
+    width: 48%;
+}
+.method .method-cards  .methodCard span {
+    margin-right: 10px;
+}
+.method .method-cards  .methodCard > div:first-child img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.method .method-cards  .methodCard div:first-child span {
+    margin-top: -5px;
+    opacity: var(--opacity);
+}
+.method .method-cards  .methodCard div:first-child .code  {
+    font-weight: bold;
+}
+.method .method-cards  .methodCard div:last-child {
+    text-align: right;
+}
+.method .method-cards  .methodCard div:last-child span svg {
+    width: 25px;
+    height: 25px;
+
+}

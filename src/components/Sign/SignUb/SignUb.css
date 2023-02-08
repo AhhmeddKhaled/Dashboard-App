@@ -1,0 +1,53 @@
+.sign-ub {
+    height: 100%;
+    margin: 0 !important;
+}
+form {
+    width: 340px !important;
+    margin-top: 60px !important;
+}
+form input {
+    width: 100%;
+}
+.social-media {
+    color: #fff;
+}
+.sign-ub .signIn-nav {
+    padding: 40px;
+    color: #fff;
+    top: 0;
+}
+.sign-ub .signIn-nav div:nth-child(2)>span {
+    opacity: 1;
+}
+
+.sign-ub .signIn-nav div:last-child span {
+    background: var(--main-color);
+    padding: 6px 10px;
+    border-radius: var(--border-radius);
+}
+.signub-background {
+    width: 100%;
+    height: 250px;
+    background: url('https://demos.creative-tim.com/material-dashboard-react/static/media/bg-sign-up-cover.30c5950b22e74f0d82ba.jpeg') center no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius);
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.signub-background div { 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    border-radius: var(--border-radius);
+}
+.form-check input {
+    margin: 0 10px 0 0;
+}
+.form-check label {
+    opacity: var(--opacity);
+}

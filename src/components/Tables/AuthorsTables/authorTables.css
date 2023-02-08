@@ -1,0 +1,74 @@
+
+.Authors-Table .author {
+    padding: 10px;
+}
+.Authors-Table  .author:not(:last-child) {
+    border-bottom: 1px solid rgb(219, 210, 210);
+}
+.Authors-Table  .author > div:not(:first-child) {
+    text-align: center;
+}
+.Authors-Table  .author > div:not(:first-child,:nth-child(2)) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Authors-Table  .author > div:nth-child(3) .author-state {
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: var(--border-radius);
+    color: #ddd;
+    background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+}
+.Authors-Table .author > div:nth-child(2) div .author-jop,
+.Authors-Table  .author > div:first-child div .author-name {
+    font-weight: bold;
+}
+.Authors-Table  .authorHead > div {
+    text-align: center;
+}
+.Authors-Table  .authorHead > div span {
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.Authors-Table  .author > div:first-child {
+    display: flex;
+    align-items: center;
+}
+.Authors-Table  .author  .img >  img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.Authors-Table .authorHead > div:first-child,
+.Authors-Table .authorHead > div:nth-child(2),
+.Authors-Table .author > div:nth-child(2) div {
+    text-align: left;
+}
+.Authors-Table  .author > div:first-child div .author-name,
+.Authors-Table .author > div:nth-child(2) div .author-jop  {
+    margin-bottom: -3px;
+}
+.Authors-Table > .author > div:nth-child(5) .author-action {
+    cursor: pointer;
+}
+.Authors-Table > .author > div:nth-child(4) .author-date,
+.Authors-Table > .author > div:nth-child(5) .author-action,
+.Authors-Table > .author > div:nth-child(2) div .author-jop,
+.Authors-Table > .author > div:nth-child(2) div .author-jopTwo,
+.Authors-Table > .author > div:first-child div .author-email,
+.Authors-Table > .authorHead > div span {
+    opacity: var(--opacity);
+}
+.Authors-Table > .author > div:nth-child(3) .author-state {
+    font-size: 10px;
+}
+.Authors-Table > .author > div:first-child div span,
+.Authors-Table > .author > div:nth-child(4) span,
+.Authors-Table > .author > div:nth-child(5) span,
+.Authors-Table > .author > div:nth-child(2) div span {
+    font-size: 12px;
+}
+.Authors-Table span {
+    display: block;
+}

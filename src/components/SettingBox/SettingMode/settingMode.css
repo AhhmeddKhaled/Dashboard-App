@@ -1,0 +1,10 @@
+.SettingMode div {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.SettingMode div h6 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: -4px 120px -1px 0;
+}

@@ -1,0 +1,8 @@
+.Conversations > .row {
+    margin: 15px;
+}
+.Conversations .ConversationsTitle div h6 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}

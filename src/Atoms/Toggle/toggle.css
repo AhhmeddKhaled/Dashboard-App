@@ -1,0 +1,28 @@
+.toggle {
+    width: 40px !important;
+    height: 16px !important;
+    background-color: #333;
+    border-radius: 8px;
+    position: relative;
+    transition: .7s;
+}
+
+.toggle > span {
+    height: 145%;
+    width: 23px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 2px solid rgb(190, 180, 180);
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    cursor: pointer;
+    transition: .3s;
+}
+.light {
+    background-color: #ddd;
+}
+.toggle > span.fullRight {
+    left: 100%;
+    transform: translateX(-100%);
+}

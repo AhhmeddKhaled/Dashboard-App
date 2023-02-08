@@ -1,0 +1,10 @@
+.ProfileProjects {
+    justify-content: space-between;
+    margin: 15px;
+}
+.ProfileProjects .ProfileProjectsTitle div h6 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0 20px;
+}

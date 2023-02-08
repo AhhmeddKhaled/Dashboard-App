@@ -1,0 +1,47 @@
+.notificationsMessag {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    position: absolute;
+    right: -100%;
+    top: 30px;
+    transition: .5s;
+    background-color: #ddd;
+}
+.notificationsMessag.notBackground {
+
+    background: rgb(52,71,103);
+}
+.notificationsMessag div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.notificationsMessag div:hover {
+    background-color: rgb(61, 60, 60);
+    border-radius: 6px;
+}
+.notificationsMessag div svg {
+    color: var(--second-color);
+    margin-right: 8px;
+}
+.notificationsMessag div span {
+    font-size: 15px;
+    color: var(--second-color);
+    opacity: var(--opacity);
+    text-transform: capitalize;
+}
+.notificationsMessag .close {
+    font-weight: bold;
+    color: var(--second-color);
+    text-align: right;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.open {
+    right: 0;
+}

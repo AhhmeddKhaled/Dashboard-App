@@ -1,0 +1,35 @@
+.imgRadius {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    display: flex;
+}
+.imgRadius img {
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+    transition: .3s;
+    
+}
+.imgRadius img:hover {
+    z-index: 100;
+}
+/* .imgRadius img::after { */
+    /* content: 'img'; */
+    /* position: absolute; */
+    /* top: 10px; */
+    /* left: 10px; */
+    /* z-index: 1001 */
+/* }B */
+.imgRadius img:first-child {
+    left: 10px;
+}
+.imgRadius img:nth-child(2) {
+    left: 20px;
+}
+.imgRadius img:nth-child(3) {
+    left: 30px;
+}
+.imgRadius img:nth-child(4) {
+    left: 40px;
+}

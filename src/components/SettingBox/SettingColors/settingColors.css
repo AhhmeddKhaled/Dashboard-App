@@ -1,0 +1,46 @@
+.settingColors {
+    margin-bottom: 0;
+}
+.settingColors .settingColorsTitle {
+    margin-bottom: 10px;
+}
+.settingColors .settingColorsTitle span {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.settingColors .colorsList {
+    text-align: left;
+}
+.settingColors .colorsList ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.settingColors .colorsList ul li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 15px;
+    opacity: .7;
+    cursor: pointer;
+}
+.settingColors .colorsList ul li:first-child {
+    background: linear-gradient(195deg, rgb(236, 64, 122), rgb(216, 27, 96));
+}
+.settingColors .colorsList ul li:nth-child(2) {
+    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+}
+.settingColors .colorsList ul li:nth-child(3) {
+    background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+}
+.settingColors .colorsList ul li:nth-child(4) {
+    background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+}
+.settingColors .colorsList ul li {
+    background: linear-gradient(195deg, rgb(255, 167, 38), rgb(251, 140, 0));
+}
+.settingColors .colorsList ul li.active {
+    opacity: 1;
+    border: 2px solid rgb(49, 47, 47);
+}

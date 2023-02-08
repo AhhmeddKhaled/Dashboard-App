@@ -1,0 +1,16 @@
+.ProfileInformation > .row {
+    margin: 15px;
+}
+.ProfileInformation .ProfileInformationTitle div h6 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.ProfileInformation .ProfileInformationInfo div span {
+    font-size: 14px;
+    opacity: var(--opacity);
+    line-height: 1.8;
+}
+.ProfileInformation .ProfileInformationData .row {
+    padding: 17px 15px;
+}

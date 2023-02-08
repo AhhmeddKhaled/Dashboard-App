@@ -1,0 +1,9 @@
+.sidebar {
+    width: 250px !important;
+    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+    padding: 20px;
+    margin: 0 !important;
+    border-radius: 10px;
+    margin-right: 10px !important; 
+    height: 700px;
+}

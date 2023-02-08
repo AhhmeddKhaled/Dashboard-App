@@ -1,0 +1,20 @@
+.notificationsAlert {
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+.notificationsAlert div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ddd;
+    font-size: 18px;
+}
+.notificationsAlert div svg {
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+}
+.notificationsAlert div strong {
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.signInn {
+    height: 90vh;
+    margin: 0;
+}
+.signInn .signIn-nav {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: var(--border-radius);
+    top: 140px;
+}
+.signInn .signIn-nav div:nth-child(2) > span {
+    opacity: var(--opacity);
+}
+.signInn .signIn-nav div:last-child span {
+    background-color: #000;
+}
+.signInn .remember {
+    margin: .5rem 1rem;
+}
+.signInn .remember span {
+    width: 50%;
+}
+.signInn .remember >  span:last-child {
+    opacity: var(--opacity);
+}

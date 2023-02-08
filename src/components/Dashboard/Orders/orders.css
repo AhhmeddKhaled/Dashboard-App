@@ -1,0 +1,50 @@
+.order {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.order .orderIcon {
+    position: relative;
+}
+.order:not(:last-child) .orderIcon::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 32px;
+    background-color: #ecd1d1;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+}
+.order .orderIcon svg {
+    padding: 8px;
+    border-radius: 50%;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+}
+.order:nth-child(2) .orderIcon svg {
+    background: rgb(76, 175, 80);
+}
+.order:nth-child(3) .orderIcon svg {
+    background: rgb(244, 67, 53);
+}
+.order:nth-child(4) .orderIcon svg {
+    background: rgb(26, 115, 232);
+}
+.order:nth-child(5) .orderIcon svg {
+    background: rgb(251, 140, 0);
+}
+.order:last-child .orderIcon svg {
+    background: rgb(233, 30, 99);
+}
+
+.order .orderPrice strong {
+    display: block;
+    font-size: 12px;
+}
+.order .orderPrice span {
+    font-size: 12px;
+    opacity: var(--opacity);
+}

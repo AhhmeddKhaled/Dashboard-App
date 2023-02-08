@@ -1,0 +1,9 @@
+.settingNavbarFixed div {
+    display: flex;
+    align-items: center;
+}
+.settingNavbarFixed div h6 {
+    margin: -4px 110px -1px 0;
+    font-size: 20px;
+    font-weight: bold;
+}

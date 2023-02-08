@@ -1,0 +1,67 @@
+
+.information {
+    padding: var(--section-padding);
+    margin: var(--section-margin) 10px 0 10px !important;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+.information .information-title {
+    padding: 10px;
+}
+.information .information-title h6 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.information .information-data {
+    padding: 30px 0;
+}
+.information .information-data .information-data-info {
+    padding: var(--section-padding) 20px;
+}
+.information .information-data .information-data-info .information-data-info-title {
+    padding: 0 30px;
+}
+.information .information-data .information-data-info .information-data-info-title span {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.information .information-data .information-data-info .information-data-info-delete,
+.information .information-data .information-data-info .information-data-info-edit {
+    display: flex;
+    justify-content: center;
+}
+.information .information-data .information-data-info .information-data-info-delete span,
+.information .information-data .information-data-info .information-data-info-edit span {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    cursor: pointer;
+}
+.information .information-data .information-data-info .information-data-info-delete span {
+    color: rgb(226, 43, 43);
+}
+.information .information-data .information-data-info .information-data-info-delete span:hover,
+.information .information-data .information-data-info .information-data-info-edit span:hover {
+    opacity: var(--opacity);
+}
+.information .information-data .information-cv {
+
+}
+.information .information-data .information-cv .row div {
+    padding: 0 40px;
+    text-transform: capitalize;
+}
+.information .information-data .information-cv .row div span:first-child {
+    opacity: var(--opacity);
+    font-size: 12px;
+
+}
+.information .information-data .information-cv .row div span:last-child {
+    font-weight: bold;
+    font-size: 14px;
+
+}

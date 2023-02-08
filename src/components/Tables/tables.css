@@ -1,0 +1,29 @@
+/* Start Tables Styling */
+.Authors-Table,
+.Projects-Table {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: var(--section-padding);
+    position: relative;
+    padding: 50px 20px;
+    margin: 40px 0;
+}
+.Authors-Table::before,
+.Projects-Table::before {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94%;
+    background: var(--main-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
+}
+.Authors-Table::before {
+    content: 'Authors Table';
+}
+.Projects-Table::before {
+    content: 'Projects Table';
+} 

@@ -1,0 +1,37 @@
+.chartCard {
+    position: relative;
+    width: 32% !important;
+    padding: 15px;
+}
+.chartCard .canvas {
+    position: relative;
+    top: -40px;
+    border-radius: var(--border-radius);
+}
+.chartCard .canvas canvas {
+    border-radius: var(--border-radius);
+}
+.chartCard:first-child .canvas canvas {
+    background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+}
+.chartCard:nth-child(2) .canvas canvas {
+    background: linear-gradient(195deg, rgb(102, 187, 106), rgb(67, 160, 71));
+}
+.chartCard:last-child .canvas canvas {
+    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+}
+.chartCard .info {
+    padding-bottom: 10px;
+    margin-top: -20px;
+}
+.chartCard .info h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.chartCard .info span {
+    font-size: 14px;
+}
+.chartCard .day svg {
+    margin-right: 2px;
+}

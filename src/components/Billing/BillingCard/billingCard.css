@@ -1,0 +1,51 @@
+.billing .cards .card {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    width: 24%;
+    padding: 0;
+    background-color: inherit;
+}
+.billing .cards .card > .row {
+    margin: 20px 0;
+}
+.billing .cards .card > .row > div {
+    text-align: center;
+}
+
+.billing .cards .card > .row > div span {
+    display: block;
+}
+
+.billing .cards .card > .card-icon div {
+    display: flex;
+    justify-content: center;
+}
+
+.billing .cards .card > .card-icon div span {
+    background: var(--main-color);
+    -mo-width: fit-content;
+    width: -moz-fit-content;
+    padding: 20px;
+    color: #fff;
+    border-radius: var(--border-radius);
+}
+
+.billing .cards .card > .card-icon div span svg {
+    width: 30px;
+    height: 30px;
+}
+
+.billing .cards .card > .card-info div .card-info-title {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.billing .cards .card > .card-info div .card-info-paragraph {
+    opacity: var(--opacity);
+    font-size: 14px;
+}
+
+.billing .cards .card > .card-price div span {
+    font-weight: bold;
+}

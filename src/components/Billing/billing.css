@@ -1,0 +1,76 @@
+/* Start Billing Styling */
+
+/* Start Row One */
+.billing > div:first-child > .row:first-child {
+    justify-content: space-between;
+    margin: 0;
+}
+.billing > div:first-child > .row:first-child > div {
+}
+.billing > div:first-child > .row:first-child > div:first-child {
+    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    width: 48%;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+.billing > div:first-child > .row:first-child > div:first-child > div:first-child {
+    background: url("https://demos.creative-tim.com/material-dashboard-react/static/media/pattern-tree.156bb943ac7fd244f10c115d085e085e.svg") center no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+}
+.billing > div:first-child > .row:first-child > div:first-child > .row {
+    margin: 5px 0;
+    padding: 10px;
+}
+.billing > div:first-child > .row:first-child > div:first-child > .row span {
+    display: block;
+}
+.billing > div:first-child > .row:first-child > div:first-child > .row:nth-child(2) div svg {
+    width: 30px;
+    height: 30px;
+}
+.billing > div:first-child > .row:first-child > div:first-child > .row:nth-child(3) div span {
+    font-size: 16px;
+    font-weight: bold;
+}
+.billing > div:first-child > .row:first-child > div:first-child > .row:last-child > div span:first-child {
+    opacity: .7;
+    font-size: 14px;
+}
+.billing > div:first-child > .row:first-child > div:first-child > .row:last-child > div span:last-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.billing > div:first-child > .row:first-child > div:first-child > .row:last-child > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.billing > div:first-child > .row:first-child > div:first-child > .row:last-child > div:last-child img {
+    width: 40px;
+    height: 40px;
+} 
+
+/* End Row One */
+
+
+/* Start Row three */
+.billing > div:last-child >   .row:first-child  > div:first-child h6  {
+    font-size: 18px;
+    font-weight: bold;
+} 
+/* End Row three */
+
+
+/* End Billing Styling */

@@ -1,0 +1,88 @@
+form {
+  padding: 150px 25px 25px;
+  border-radius: var(--border-radius);
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+}
+
+form > .social-media {
+  width: 90%;
+  position: absolute;
+  padding: 25px 10px;
+  left: 53.5%;
+  top: -30px;
+  transform: translateX(-50%);
+  background: var(--main-color);
+  border-radius: var(--border-radius);
+}
+form .social-media .row {
+  margin: 10px 0;
+}
+form .social-media .row div {
+  text-align: center;
+}
+form .social-media .row:first-child div h6 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+form .social-media .row:last-child div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form .social-media .row:last-child div svg {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+}
+form .social-media .row:last-child div svg:nth-child(2) {
+  margin: 0 25px;
+}
+
+form .remember {
+  margin: 10px 0 25px 0;
+  cursor: pointer;
+}
+form .remember div {
+  display: flex;
+  align-items: center;
+}
+form .remember div span {
+  display: block;
+}
+.remember {display: flex;align-items: center;}
+
+form .submit {
+  margin: 20px 0;
+}
+form .submit div {
+  padding: 0;
+}
+form button[type="submit"] {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: var(--main-color);
+  width: 100%;
+  transition: 0.3s;
+}
+form .acount {
+  margin: 20px 0;
+}
+form .acount div {
+  justify-content: center;
+  display: flex;
+}
+form .acount div span {
+  font-size: 16px;
+}
+form .acount div span a {
+  color: var(--main-color);
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}

@@ -1,0 +1,32 @@
+.settingSidebarMode .settingSidebarModeTitle {
+    margin: 20px 0;
+}
+.settingSidebarMode .settingSidebarModeTitle h6 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: -1px;
+}
+.settingSidebarMode .settingSidebarModeTitle span {
+    opacity: var(--opacity);
+    font-size: 16px;
+}
+.settingSidebarModeButton button {
+    border-radius: var(--border-radius);
+    opacity: var(--opacity);
+    background-color: transparent;
+    border: 1px solid #797878;
+    text-transform: uppercase;
+    margin-right: 10px;
+    transition: .3s;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+}
+.settingSidebarModeButton button:first-child {
+    background-color: black;
+    color: #fff;
+}
+.settingSidebarModeButton button:hover {
+    box-shadow: 0px 5px 6px rgb(193, 176, 176);
+}
