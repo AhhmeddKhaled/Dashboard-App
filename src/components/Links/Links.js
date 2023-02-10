@@ -17,7 +17,7 @@ export default function Links() {
 
 
     return (
-        <Container className="routes" style={{position: "relative"}}>
+        <Container className="routes position-relative mw-100">
 
         <NavBar />
 

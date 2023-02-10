@@ -8,11 +8,14 @@ export default function ProfileInformation() {
 
     return(
         
-        <Col className='ProfileInformation'>
+        <Col xs={12} lg={4} className='ProfileInformation'>
 
             <Row className='ProfileInformationTitle'>
                 <Col>
-                    <h6>
+                    <h6 className='
+                    font-weight-bold
+                    text-capitalize
+                    '>
                         profile information
                     </h6>
                 </Col>

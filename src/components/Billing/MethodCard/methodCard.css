@@ -2,7 +2,6 @@
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: var(--section-padding);
-    margin: var(--section-margin) 0 0 0 !important;
 }
 .method .method-info,
 .method .method-cards  {
@@ -17,9 +16,6 @@
 .method .method-info .payment span {
     font-size: 18px;
     font-weight: bold;
-}
-.method .method-info .new-card {
-    justify-content: flex-end;
 }
 .method .method-info .new-card span {
     background-color: rgb(25, 25, 25);
@@ -44,7 +40,6 @@
     padding: 20px;
     border: 1px solid;
     border-radius: var(--border-radius);
-    width: 48%;
 }
 .method .method-cards  .methodCard span {
     margin-right: 10px;

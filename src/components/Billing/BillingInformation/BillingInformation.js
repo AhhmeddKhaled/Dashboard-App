@@ -1,50 +1,83 @@
 import './billingInformation.css';
 import { Row , Col } from 'react-bootstrap';
+import { MdDelete, MdModeEditOutline } from 'react-icons/md';
+import billing from '../../../JsonData/Billing.json';
 
-export default function BillingInformation(props) {
+export default function BillingInformation() {
 
     return(
-        
-        <Row className='information-data'>
 
-            <Row className='information-data-info'>
+        <Col xs={7} className='information'>
 
-                <Col xs={6} className='information-data-info-title'>
-                    <span> { props.title } </span>
-                </Col>
-
-                <Col className='information-data-info-delete'>
-                    <span> { props.icon } { props.iconName } </span>
-                </Col>
-
-                <Col className='information-data-info-edit'>
-                    <span> { props.iconTwo } { props.iconTwoName } </span>
+            <Row className="information-title">
+                <Col>
+                    <h6>Billing Information</h6>
                 </Col>
             </Row>
 
-            <Row className='information-cv'>
+            <Row className='information-data'>
+                {
+                billing && billing.information.map(info => {
 
-                <Row className='information-cv-name'>
-                    <Col>
-                        <span>Company Name :   </span>
-                        <span> { props.name } </span>
-                    </Col>
-                </Row>
+        return (
 
-                <Row className='information-cv-email'>
-                    <Col>
-                        <span>Email Address :   </span>
-                        <span> { props.email } </span>
-                    </Col>
-                </Row>
+<>
 
-                <Row className='information-cv-phone'>
-                    <Col>
-                        <span>VAT Number :   </span>
-                        <span> { props.number } </span>
-                    </Col>
-                </Row>
+<Row className='information-data-info'>
+
+    <Col xs={6} className='information-data-info-title'>
+        <span> { info.title } </span>
+    </Col>
+
+    <Col className='information-data-info-delete'>
+        <span> 
+            <MdDelete />
+            delete
+        </span>
+    </Col>
+
+    <Col className='information-data-info-edit'>
+        <span> 
+            <MdModeEditOutline />
+            edit
+        </span>
+    </Col>
+
+</Row>
+
+<Row className='information-cv'>
+
+    <Row className='information-cv-name'>
+      <Col>
+          <span>Company Name :   </span>
+          <span> { info.name } </span>
+      </Col>
+    </Row>
+
+    <Row className='information-cv-email'>
+        <Col>
+            <span>Email Address :   </span>
+            <span> { info.email } </span>
+        </Col>
+    </Row>
+
+    <Row className='information-cv-phone'>
+        <Col>
+            <span>VAT Number :   </span>
+            <span> { info.number } </span>
+        </Col>
+    </Row>
+
+</Row>
+</>
+        )
+
+    })
+
+}
             </Row>
-        </Row>
+
+        </Col>
+
     );
 }

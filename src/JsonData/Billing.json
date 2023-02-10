@@ -1,0 +1,108 @@
+{
+    "visaCard": {
+        "phone": "4562   1122   4594   7852",
+        "card": "Card Holder",
+        "jack": "jack peterson",
+        "expires": "Expires",
+        "date": "11/12",
+        "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/mastercard.27fca3e7637a9458fb64.png"
+    },
+    "billingCard": [
+        {
+            "title": "salary",
+            "paragraph": "Belong Interactive",
+            "price": "+$2000"
+        },
+        {
+            "title": "paypal",
+            "paragraph": "Freelance Payment",
+            "price": "+$455.00"
+        }
+    ],
+    "methodCard": [
+        {
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/mastercard.27fca3e7637a9458fb64.png",
+            "code": "7852"
+        },
+        {
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/visa.71c0d5e9e2aaee42e4c3.png",
+            "code": "7852"
+        }
+    ],
+    "invoices": [
+        {
+            "date": "February, 10, 2021",
+            "id": "#RV-126749",
+            "price": "$120"
+        },
+        {
+            "date": "April, 05, 2020",
+            "id": "#QW-103578",
+            "price": "$120"
+        },
+        {
+            "date": "June, 25, 2019",
+            "id": "#MS-415646",
+            "price": "$300"
+        },
+        {
+            "date": "March, 01, 2023",
+            "id": "#AR-803481",
+            "price": "$300"
+        }
+    ],
+    "information": [
+        {
+            "title": "lucas harper",
+            "name": "stone tech zone",
+            "email": "lucas@stone-tech.com",
+            "number": "FRB1235476"
+        },
+        {
+            "title": "ethan james",
+            "name": "stone tech zone",
+            "email": "ethan@stone-tech.com",
+            "number": "FRB12354716"
+        },
+        {
+            "title": "oliver liam",
+            "name": "viking burrito",
+            "email": "oliver@burrito.com",
+            "number": "FRB1235476"
+        }
+    ],
+    "billingApp": [
+        [
+        {
+            "appName": "Netflix",
+            "appDate": "27 March 2020, at 12:30 PM",
+            "appPrice": "- $ 2,500"
+        },
+        {
+            "appName": "Apple",
+            "appDate": "27 March 2022, at 04:30 AM",
+            "appPrice": "+ $ 2,000"
+        }],
+        [
+        {
+            "appName": "Stripe",
+            "appDate": "22 March 2021, at 03:45 PM",
+            "appPrice": "+ $ 750"
+        },
+        {
+            "appName": "HubSpot",
+            "appDate": "25 March 2022, at 12:30 PM",
+            "appPrice": "+ $ 1,000"
+        },
+        {
+            "appName": "Creative Tim",
+            "appDate": "16 April 2021, at 8:30 AM",
+            "appPrice": "+ $ 2,500"
+        },
+        {
+            "appName": "Webflow",
+            "appDate": "29 October 2020, at 05:00 AM",
+            "appPrice": "Pending"
+        }]
+    ]
+}

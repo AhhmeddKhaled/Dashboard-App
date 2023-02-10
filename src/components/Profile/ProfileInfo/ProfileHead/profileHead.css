@@ -1,28 +1,16 @@
-.profileHead {
-    justify-content: space-between;
-    align-items: center;
-    margin: 15px;
-}
 .profileHead .profileHeadImg img {
     width: 100px;
-    border-radius: 50%;
 }
 .profileHead .profileHeadInfo {
     margin-left: -30px;
 }
 .profileHead .profileHeadInfo h6 {
-    font-weight: bold;
     font-size: 18px;
-    margin: 0;
 }
 .profileHead .profileHeadInfo span {
     font-size: 14px;
     opacity: var(--opacity);
-}
-.profileHead .profileHeadIcon {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    display: block;
 }
 .profileHead .profileHeadIcon > span {
     display: flex;
@@ -43,4 +31,7 @@
 }
 .profileHead .profileHeadIcon > span span {
     text-transform: capitalize;
-} 
+}
+.profileHead hr {
+    opacity: .1;
+}

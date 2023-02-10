@@ -1,6 +1,5 @@
 .billing-app {
     padding: var(--section-padding);
-    margin: var(--section-margin) 0 0 0 !important;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
@@ -9,6 +8,10 @@
 .billing-app .billing-app-yesterday,
 .billing-app .billing-app-card {
     padding: var(--section-padding);
+}
+.billing-app .billing-app-info .billing-app-info-title h6 {
+    font-size: 18px;
+    font-weight: bold;
 }
 .billing-app .billing-app-info .billing-app-info-date  {
     display: flex;

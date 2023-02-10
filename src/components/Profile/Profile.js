@@ -9,7 +9,7 @@ export default function Profile() {
 
     return(
         
-        <Row className="profile" style={{margin: "0"}}>
+        <Row className="profile m-0">
 
         {/* Profile Background Component */}
         <ProfileBackground />

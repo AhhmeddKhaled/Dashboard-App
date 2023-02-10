@@ -4,7 +4,7 @@ import { Row , Col } from 'react-bootstrap';
 export default function ProfileProject(props) {
 
     return(
-        <Col xs={3} className='ProfileProject'>
+        <Col xs={12} lg={3} className='ProfileProject'>
 
         <Row className='ProfileProjectImg'>
             <Col>

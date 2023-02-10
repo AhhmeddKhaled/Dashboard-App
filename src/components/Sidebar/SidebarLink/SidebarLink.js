@@ -6,12 +6,13 @@ import UbgradePro from './UbgradePro/UbgradePro';
 
 export default function SidebarLink() {
 
+
     return(
 
         <Row className='links'>
 
         {/* Links Component */}
-        <Linkk link='/Dashboard' icon={<MdDashboard />} name='Dashboard' />            
+        <Linkk link='/Dashboard' icon={<MdDashboard />} name='Dashboard' className='background' />            
         <Linkk link='/Tables' icon={<MdTableView />} name='Tables' />            
         <Linkk link='/Billing' icon={<MdOutlineReceiptLong />} name='Billing' />            
         <Linkk link='/Notifications' icon={<MdNotifications />} name='Notifications' />            

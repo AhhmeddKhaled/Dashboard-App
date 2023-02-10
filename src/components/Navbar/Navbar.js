@@ -19,29 +19,69 @@ export default function NavBar() {
         className={ window.location.pathname.slice(1,).toUpperCase() === 'SIGNIN'  ? 'nav d-none' : window.location.pathname.slice(1,).toUpperCase() === 'SIGNUB' ? 'nav d-none' : ' nav d-block' }
         >
         
-            <Container className="navbar" fixed="top">
-            <Row>
-            <Col xs={12}>
+            <Container 
+            className="navbar" 
+            fixed="top"
+            >
+
+            <Row 
+            className='section-title
+            flex-grow-1
+            flex-md-shrink-1
+            '>
+
+            <Col  
+            xs={8}
+            md={12}
+            >
             <MdHome /> 
-            <span className='nav-text'>
-            / Dashboard
-            </span>
+                <span className='nav-text'>
+                    / Dashboard
+                </span>
             </Col>
-            <Col><h3 className='head-text'>
-                Dashboard
-            </h3></Col>
+            
+            <Col 
+            xs={4}
+            sm={12}
+            className='
+                justify-content-end
+                justify-content-sm-start
+            '
+            >
+                <h3 className='head-text 
+                m-0
+                '>
+                    Dashboard
+                </h3>
+            </Col>
             </Row>
 
-            <Row>
-            <Col xs={8}>
+            <Row 
+            className='
+            flex-grow-1
+            flex-wrap
+            mt-3
+            mt-sm-0
+            justify-content-center
+            justify-content-sm-end
+            '>
+            <Col 
+            xs={6}
+            sm={8} 
+            className='
+            d-flex
+            justify-content-sm-end
+            justify-content-start
+            '>
             <input type="sreach" placeholder='search here'/>
             </Col>
-            <Col xs={4}>
+            <Col xs={4} lg={3} className='d-flex align-items-center justify-content-end '>
                 <MdPerson />
                 <MdSettings onClick={() => openSettingBox()}/>
                 <MdNotifications/>
             </Col>
             </Row>
+
             </Container>
     </Row>
     )

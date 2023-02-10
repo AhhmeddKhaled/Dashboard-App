@@ -7,13 +7,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ddd;
     font-size: 18px;
+    color: #817a7a;
 }
 .notificationsAlert div svg {
     width: 20px;
     height: 20px;
-    font-weight: bold;
+    display: flex;
+    justify-self: flex-end;
+    cursor: pointer;
 }
 .notificationsAlert div strong {
     cursor: pointer;

@@ -7,7 +7,13 @@ export default function Sidebar() {
 
   return (
     <>
-      <Container className={ window.location.pathname.slice(1,).toUpperCase() === 'SIGNIN'  ? ' sidebar d-none' : window.location.pathname.slice(1,).toUpperCase() === 'SIGNUB' ? 'sidebar d-none' : ' sidebar d-block' }  >
+      <Container className={ 
+        window.location.pathname.slice(1,).toUpperCase() === 'SIGNIN'  ?
+        ' sidebar d-none' : 
+        window.location.pathname.slice(1,).toUpperCase() === 'SIGNUB' ?
+        'sidebar d-none'  : 
+        ' sidebar d-none d-md-block ' 
+        }  >
         
         {/* Sidebar Brand Component */}
         <SidebarBrand />

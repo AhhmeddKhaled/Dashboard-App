@@ -1,12 +1,14 @@
 .fixed {
     position: fixed;
     z-index: 1000;
-    height: 100px;
     width: 77%;
     transition: .3s;
     height: 80px;
     top: 5px;
     border-radius: var(--border-radius);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 .fixedPadding {
     padding: 80px;
@@ -16,28 +18,21 @@
     border-radius: 10px;
     height: 100%;
     padding:  0 15px !important;
-    color: transparent;
     box-shadow: none !important;
     color: inherit;
 }
-.navbar  .row {
-    width: 40%;
-}
-.navbar .row:first-child div {
+.navbar .section-title div {
     display: flex;
     align-items: center;
 }
-.navbar .row:first-child div svg {
+.navbar .section-title div svg {
     opacity: .8;
     width: 20px;
     margin-top: 2px;
 }
-.navbar .row:first-child div h3 {
+.navbar .section-title div h3 {
     font-size: 18px;
     font-weight: bold;
-}
-.navbar .row:last-child {
-    justify-content: center;
 }
 .navbar .row:last-child div:first-child {
     padding: 10px;
@@ -59,15 +54,9 @@
 .navbar .row:last-child div:first-child input:focus::placeholder {
     opacity: 0;
 } 
-
-.navbar .row:last-child div:last-child {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .navbar .row:last-child div:last-child svg {
     margin: 0 6px;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
