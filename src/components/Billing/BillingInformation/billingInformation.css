@@ -1,9 +1,10 @@
 
 .information {
     padding: var(--section-padding);
-    margin: var(--section-margin) 10px 0 10px !important;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    margin-right: 10px;
+    margin-left: 10px;
 }
 .information .information-title {
     padding: 10px;
@@ -47,9 +48,6 @@
 .information .information-data .information-data-info .information-data-info-delete span:hover,
 .information .information-data .information-data-info .information-data-info-edit span:hover {
     opacity: var(--opacity);
-}
-.information .information-data .information-cv {
-
 }
 .information .information-data .information-cv .row div {
     padding: 0 40px;

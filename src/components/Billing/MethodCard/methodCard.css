@@ -17,13 +17,9 @@
     font-size: 18px;
     font-weight: bold;
 }
-.method .method-info .new-card span {
+.method .method-info .new-card button {
     background-color: rgb(25, 25, 25);
     padding: 8px 10px;
-    border-radius: var(--border-radius);
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 .method .method-info .new-card span svg {
     margin: -3px 0 0 0;

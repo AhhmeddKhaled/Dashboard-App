@@ -1,20 +1,14 @@
 
 .visaCard {
     background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
-    position: relative;
-    flex-direction: column;
     color: #fff;
     box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
 }
 .visaCard .visacardOverlay {    
     background: url("https://demos.creative-tim.com/material-dashboard-react/static/media/pattern-tree.156bb943ac7fd244f10c115d085e085e.svg") center no-repeat;
     background-size: cover;
-    position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
     opacity: .1;
 }
 .visaCard .row {
@@ -40,11 +34,6 @@
     font-weight: bold;
     margin-bottom: 5px;
     font-size: 10px;
-}
-.visaCard .visaCardJack div:last-child {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 .visaCard .visaCardJack div:last-child img {
     width: 40px;

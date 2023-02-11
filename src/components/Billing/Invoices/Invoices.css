@@ -28,12 +28,10 @@
 }
 .invoices .invoices-info .invoices-button button {
     border: none;
-    color: #ddd;
     background: var(--main-color);
     padding: 8px 12px;
     font-size: 14px;
     border-radius: var(--border-radius);
-    text-transform: uppercase;
 }
 
 .invoices .invoices-data div:first-child .month {

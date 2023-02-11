@@ -1,12 +1,12 @@
 import './Invoices.css';
-import { Row , Col } from 'react-bootstrap'
+import { Row , Col, Button } from 'react-bootstrap'
 import { MdPictureAsPdf } from 'react-icons/md';
 import billing from '../../../JsonData/Billing.json';
 
 export default function Invoices() {
 
     return(
-        <Col xs lg='4' md='12' className="invoices">
+        <Col xl='4' xs='12' className="invoices mt-3 mt-xl-0">
 
         <Row className="invoices-info">
             <Col className="invoices-title">
@@ -14,7 +14,7 @@ export default function Invoices() {
             </Col>
 
             <Col className="invoices-button">
-                <button>View all</button>
+                <Button className='text-uppercase'>View all</Button>
             </Col>
         </Row>
 

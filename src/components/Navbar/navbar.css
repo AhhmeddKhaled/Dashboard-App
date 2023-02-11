@@ -15,48 +15,79 @@
 }
 .navbar {
     background-color: transparent !important;
-    border-radius: 10px;
-    height: 100%;
-    padding:  0 15px !important;
     box-shadow: none !important;
     color: inherit;
 }
-.navbar .section-title div {
-    display: flex;
-    align-items: center;
-}
 .navbar .section-title div svg {
-    opacity: .8;
+    opacity: var(--opacity);
     width: 20px;
     margin-top: 2px;
 }
+.navbar .section-title .nav-text {
+    font-size: var(--font-small);
+}
 .navbar .section-title div h3 {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: var(--font-larg);
 }
-.navbar .row:last-child div:first-child {
-    padding: 10px;
-    text-align: right;
+.navbar .search-box div:first-child {
+    padding: var(--padding-larg);
 }
-.navbar .row:last-child div:first-child input {
-    padding: 10px;
+.navbar .search-box div:first-child input {
+    padding: var(--padding-medium);
     width: 200px;
     border: 1px solid rgb(112, 107, 107);
     outline: none;
-    border-radius: 10px;
     opacity: .4;
     background-color: transparent;
 }
-.navbar .row:last-child div:first-child input::placeholder {
+.navbar .search-box div:first-child input::placeholder {
     text-transform: capitalize;
-    opacity: .6;
+    opacity: var(--opacity);
 }
-.navbar .row:last-child div:first-child input:focus::placeholder {
+.navbar .search-box div:first-child input:focus::placeholder {
     opacity: 0;
 } 
-.navbar .row:last-child div:last-child svg {
+.navbar .search-box div:last-child svg {
     margin: 0 6px;
-    width: 40px;
+    width: 30px;
     height: 40px;
     cursor: pointer;
+}
+@media (max-width: 566px) {
+    .navbar .section-title div svg {
+        width: 10px;
+    }
+    .navbar .section-title div h3 {
+        font-size: var(--font-x-small);
+    }
+    .navbar .search-box div:first-child input {
+        width: 100px;
+        padding: var(--padding-small);
+    }
+    .navbar .search-box div:first-child input::placeholder {
+        font-size: var(--font-small);
+    }
+    .navbar .search-box div:last-child svg {
+        width: 20px;
+        height: 30px;
+    }
+}
+@media (min-width: 567px) and (max-width: 767px) {
+    .navbar .section-title .nav-text {
+        font-size: var(--font-x-small);
+    }
+    .navbar .section-title div h3 {
+        font-size: var(--font-x-medium);
+    }
+    .navbar .search-box div:first-child input {
+        width: 120px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar .section-title div h3 {
+        font-size: var(--font-medium);
+    }
+    .navbar .search-box div:first-child input {
+        width: 140px;
+    }
 }

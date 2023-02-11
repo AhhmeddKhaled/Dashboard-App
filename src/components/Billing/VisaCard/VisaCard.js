@@ -7,8 +7,18 @@ export default function VisaCard() {
 
     return(
         
-          <Col xs lg='5' md='12' className='visaCard d-flex justify-content-between'>
-            <Col className='visacardOverlay'></Col>
+          <Col  lg='5' xs='12' className='visaCard 
+          position-relative 
+          d-flex
+          flex-column
+          justify-content-around 
+          rounded
+          mb-sm-3 mb-lg-1'>
+            <Col className='visacardOverlay
+            position-absolute
+            w-100
+            h-100
+            '></Col>
 
             <Row className='visaCardWifi'>
               <Col>
@@ -43,7 +53,9 @@ export default function VisaCard() {
                 </span>
               </Col>
 
-              <Col>
+              <Col
+              className='d-flex align-items-center justify-content-end'
+              >
                 <img src={billing.visaCard.src} alt='' />
               </Col>
             </Row>

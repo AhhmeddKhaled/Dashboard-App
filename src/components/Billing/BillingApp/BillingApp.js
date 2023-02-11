@@ -9,13 +9,14 @@ import {
 import "./billingApp.css";
 import billing from '../../../JsonData/Billing.json';
 
+console.log(window.navigator)
 export default function BillingApp() {
 
 	const icons = [<MdExpandMore />, <MdExpandLess />];
 	const iconsTwo = [<MdExpandLess />, <MdExpandLess />, <MdExpandLess />, <MdPriorityHigh />];
 
 	return (
-		<Col className="billing-app mt-5">
+		<Col className="billing-app mt-3 mt-xl-0">
 			<Row className="billing-app-info">
 				<Col className="billing-app-info-title">
 					<h6>Your Transaction's</h6>

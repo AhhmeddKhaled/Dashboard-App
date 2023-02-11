@@ -11,9 +11,9 @@ export default function Billing() {
   return (
     <Row className="billing">
     
-      <Row>
+      <Row className='m-0 mb-3 p-0'>
 
-      <Col xs lg='8' md='12' className="cards">
+      <Col xl='8' xs='12' className="cards p-0 p-xl-2 pt-xl-0 pb-xl-0">
         <Row className='justify-content-md-center m-0'>
 
         {/* Visa Card Component */}

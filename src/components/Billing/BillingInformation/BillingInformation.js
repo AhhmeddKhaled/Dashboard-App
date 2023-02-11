@@ -7,7 +7,12 @@ export default function BillingInformation() {
 
     return(
 
-        <Col xs={7} className='information'>
+        <Col xs={12} xl={7} className='information 
+        m-0
+        m-xl-2
+        mt-3
+        mt-xl-0 
+        '>
 
             <Row className="information-title">
                 <Col>

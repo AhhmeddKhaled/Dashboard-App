@@ -46,7 +46,7 @@ export default function Linkk(props) {
             to={ props.link }
             onClick={(e) => 
             {
-            backgroundLink()
+            background(e)
             
             }
             }>

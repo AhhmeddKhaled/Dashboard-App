@@ -11,7 +11,7 @@ export default function BillingCard() {
     
     return(
         
-        <Col xs lg='7' md='12' className='d-flex justify-content-between mt-md-4 m-lg-0 p-xs-0 p-lg-2 pt-lg-0 pb-lg-0'>
+        <Col xs lg='7' md='12' className='d-flex justify-content-between'>
         {
 
         billing.billingCard.map((card , i) => {
@@ -19,7 +19,7 @@ export default function BillingCard() {
             return(
 
 
-            <Col xs lg='6' md='5' className='card m-lg-1'>
+            <Col xs lg='6' md='5' className='card m-lg-1 mt-lg-0 mb-lg-0' key={i}>
                 <Row className="card-icon">
                     <Col>
                         <span> { icons[i] } </span>

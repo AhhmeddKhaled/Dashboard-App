@@ -1,8 +1,6 @@
 .billing .cards .card {
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
-    /* width: 24%; */
-    padding: 0;
     background-color: inherit;
 }
 .billing .cards .card > .row {
