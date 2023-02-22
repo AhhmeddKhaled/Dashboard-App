@@ -7,12 +7,7 @@ export default function BillingInformation() {
 
     return(
 
-        <Col xs={12} xl={7} className='information 
-        m-0
-        m-xl-2
-        mt-3
-        mt-xl-0 
-        '>
+        <Col xs={12} xl={7} className='information rounded m-0 m-xl-2 mt-3 mt-xl-0 '>
 
             <Row className="information-title">
                 <Col>
@@ -21,65 +16,62 @@ export default function BillingInformation() {
             </Row>
 
             <Row className='information-data'>
-                {
-                billing && billing.information.map(info => {
+                
+                { billing && billing.information.map(info => {
 
         return (
 
-<>
-
-<Row className='information-data-info'>
+        <>
+            <Row className='information-data-info'>
 
     <Col xs={6} className='information-data-info-title'>
-        <span> { info.title } </span>
+        <span className='text-capitalize'> { info.title } </span>
     </Col>
 
-    <Col className='information-data-info-delete'>
-        <span> 
+    <Col className='information-data-info-delete d-flex justify-content-center'>
+        <span className='d-flex align-items-center text-uppercase'> 
             <MdDelete />
             delete
         </span>
     </Col>
 
-    <Col className='information-data-info-edit'>
-        <span> 
+    <Col className='information-data-info-edit d-flex justify-content-center'>
+        <span className='d-flex align-items-center text-uppercase'> 
             <MdModeEditOutline />
             edit
         </span>
     </Col>
 
-</Row>
+            </Row>
 
-<Row className='information-cv'>
+            <Row className='information-cv'>
 
     <Row className='information-cv-name'>
-      <Col>
+      <Col className='text-capitalize'>
           <span>Company Name :   </span>
           <span> { info.name } </span>
       </Col>
     </Row>
 
     <Row className='information-cv-email'>
-        <Col>
+        <Col className='text-capitalize'>
             <span>Email Address :   </span>
             <span> { info.email } </span>
         </Col>
     </Row>
 
     <Row className='information-cv-phone'>
-        <Col>
+        <Col className='text-capitalize'>
             <span>VAT Number :   </span>
             <span> { info.number } </span>
         </Col>
     </Row>
 
-</Row>
-</>
-        )
-
-    })
-
-}
+            </Row>
+        </>
+        
+        )})}
+            
             </Row>
 
         </Col>

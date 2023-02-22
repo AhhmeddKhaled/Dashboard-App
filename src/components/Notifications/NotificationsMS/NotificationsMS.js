@@ -1,5 +1,5 @@
-import { Alert , Row , Col } from 'react-bootstrap';
 import './NotificationsMS.css';
+import { Alert , Row , Col } from 'react-bootstrap';
 import { IoIosClose } from 'react-icons/io'
 
 export default function NotificationsMS() {

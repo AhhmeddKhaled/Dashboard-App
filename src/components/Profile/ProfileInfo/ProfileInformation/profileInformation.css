@@ -2,13 +2,31 @@
     margin: 15px;
 }
 .ProfileInformation .ProfileInformationTitle div h6 {
-    font-size: 18px;
+    font-size: var(--font-larg);
 }
 .ProfileInformation .ProfileInformationInfo div span {
-    font-size: 14px;
+    font-size: var(--font-x-medium);
     opacity: var(--opacity);
     line-height: 1.8;
 }
 .ProfileInformation .ProfileInformationData .row {
     padding: 17px 15px;
+}
+.ProfileInformationData div span:first-child {
+    font-size: var(--font-small);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.ProfileInformationData div span:last-child {
+    font-size: var(--font-x-small);
+    opacity: var(--opacity);
+}
+.ProfileInformationData div span:last-child svg {
+    margin-right: 10px;
+    color: rgb(21, 99, 147);
+    cursor: pointer;
+    transition: .3s;
+}
+.ProfileInformationData div span:last-child svg:hover {
+    transform: scale(1.1);
 }

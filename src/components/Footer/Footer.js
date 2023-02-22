@@ -5,11 +5,11 @@ export default function Footer() {
 
     return(
         <Row className='footer'>
-            <Col xs={8}>
+            <Col xs={7}>
                 <span>
                 © 2023, made with ♥ by 
-                <strong> Creative Tim </strong>
-                for a better web.
+                <strong> Creative  </strong>
+                for a Ahmed khaled.
                 </span>
             </Col>
 

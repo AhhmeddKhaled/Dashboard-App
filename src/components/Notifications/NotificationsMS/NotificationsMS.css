@@ -1,14 +1,33 @@
+.notifications .notificatiosMS {
+    padding: var(--section-padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 75%;
+    margin: 15px auto;
+}
+
+.notificatiosMS .notificationsTitle div h6 {
+    font-size: var(--font-larg);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 .notificationsAlert {
     margin: 10px auto;
     padding: 20px;
     border-radius: var(--border-radius);
 }
+
 .notificationsAlert div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
     color: #817a7a;
+}
+
+.notificationsAlert div span {
+    font-size: var(--font-x-small);
 }
 .notificationsAlert div svg {
     width: 20px;
@@ -17,6 +36,15 @@
     justify-self: flex-end;
     cursor: pointer;
 }
+
 .notificationsAlert div strong {
     cursor: pointer;
+}
+@media (max-width: 991px) {
+    .notificatiosMS .notificationsTitle div h6 {
+        font-size: var(--font-x-medium);
+    }
+.notificationsAlert div span {
+    font-size: var(--font-x-small);
+}
 }

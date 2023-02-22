@@ -1,0 +1,45 @@
+.platformSettings>.row {
+    margin: 15px 0;
+}
+
+.platformSettings .platformSettingsInfo .row {
+    margin: 10px 0;
+}
+
+.platformSettings .platformSettingsTitle div h6 {
+    font-weight: bold;
+    font-size: var(--font-larg);
+    text-transform: capitalize;
+}
+
+.platformSettings .platformSettingsInfoTitle div span {
+    opacity: var(--opacity);
+    font-size: var(--font-small);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.PlatformSettingsEmail {
+    padding: 20px var(--padding-medium);
+    align-items: center;
+}
+
+.PlatformSettingsEmail>span {
+    margin-left: 15px;
+}
+
+.PlatformSettingsEmail div:last-child span {
+    font-size: var(--font-small);
+    opacity: var(--opacity);
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .PlatformSettingsEmail {
+        padding: 0;
+    }
+
+    .PlatformSettingsEmail div:last-child span {
+        font-size: var(--font-x-small);
+    }
+}

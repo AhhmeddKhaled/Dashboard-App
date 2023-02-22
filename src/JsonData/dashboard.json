@@ -1,0 +1,96 @@
+{
+    "box": [
+        {
+            "id": 1,
+            "title": "Bookings",
+            "number": "281",
+            "rate": "+55%",
+            "parag": "han lask week"
+        },
+        {
+            "id": 2,
+            "title": "Today's Users",
+            "number": "2,300",
+            "rate": "+3%",
+            "parag": "than last month"
+        },
+        {
+            "id": 3,
+            "title": "Revenue",
+            "number": "34k",
+            "rate": "+1",
+            "parag": "than yesterday"
+        },
+        {
+            "id": 4,
+            "title": "Followers",
+            "number": "91",
+            "parag": "Just updated"
+        }
+    ],
+    "project": [
+        {
+            "id": 1,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/logo-xd.6e37886f94dba0c2967ece68a152e30c.svg",
+            "title": "Material UI XD Version",
+            "price": "$14,000"
+        },
+        {
+            "id": 2,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/logo-atlassian.f2b0e8570a4b4ce768854ff3dad1a6e1.svg",
+            "title": "Add Progress Track",
+            "price": "$3,000"
+        },
+        {
+            "id": 3,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/logo-slack.7c47c5aa474b5c4fb39fcf05ffb8e4e7.svg",
+            "title": "Fix Platform Errors",
+            "price": "Not Set"
+        },
+        {
+            "id": 4,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/logo-spotify.e83cf56c9d99a1fdf59e8deb58bbe470.svg",
+            "title": "Launch our Mobile App",
+            "price": "$20,500"
+        },
+        {
+            "id": 5,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/logo-jira.c19fd4e416babfbd0fdb0a794188c601.svg",
+            "title": "Add the New Pricing Page",
+            "price": "$500"
+        },
+        {
+            "id": 6,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/logo-invision.a1062115730dcd10e1c4f4abe7b9ab33.svg",
+            "title": "Redesign New Online Shop",
+            "price": "$2,000"
+        }
+    ],
+    "order": [
+        {
+            "id": 1,
+            "price": "$2400, Design changes",
+            "date": "22 DEC 7:20 PM"
+        },
+        {
+            "id": 2,
+            "price": "New order #1832412",
+            "date": "21 DEC 11 PM"
+        },
+        {
+            "id": 3,
+            "price": "Server payments for April",
+            "date": "21 DEC 9:34 PM"
+        },
+        {
+            "id": 4,
+            "price": "New card added for order #4395133",
+            "date": "20 DEC 2:20 AM"
+        },
+        {
+            "id": 5,
+            "price": "New card added for order #4395133",
+            "date": "18 DEC 4:54 AM"
+        }
+    ]
+}

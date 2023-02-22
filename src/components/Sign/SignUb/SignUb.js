@@ -24,7 +24,7 @@ export default function SignUb() {
           />
         }
         sign="Sign in"
-        // link="/SIgnIn"
+        link="/SIgnIn"
         input={[
           <Form.Group className='m-3 p-0'><Form.Control type="text" placeholder="Name" /></Form.Group>,
           <Form.Group className='m-3 p-0'><Form.Control type="email" placeholder="Email" /></Form.Group>,

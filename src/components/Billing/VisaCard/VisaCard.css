@@ -1,4 +1,3 @@
-
 .visaCard {
     background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
     color: #fff;
@@ -13,7 +12,7 @@
 }
 .visaCard .row {
     margin: 5px 0;
-    padding: 10px;
+    padding: var(--padding-larg);
 }
 .visaCard .row span {
     display: block;
@@ -23,19 +22,47 @@
     height: 30px;
 }
 .visaCard .visaCardPhone div span {
-    font-size: 16px;
+    font-size: var(--font-medium);
     font-weight: bold;
 }
 .visaCard .visaCardJack div span:first-child {
-    opacity: .7;
-    font-size: 11px;
+    opacity: var(--opacity);
+    font-size: var(--font-x-small);
 }
 .visaCard .visaCardJack div span:last-child {
-    font-weight: bold;
     margin-bottom: 5px;
-    font-size: 10px;
+    font-size: var(--font-x-small);
+}
+.visaCard .visaCardJack div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .visaCard .visaCardJack div:last-child img {
     width: 40px;
     height: 40px;
+}
+@media (max-width: 575px) {
+    .visaCard {
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 576px) and (max-width: 991px){
+    .visaCard .visaCardPhone div span {
+        font-size: var(--font-x-small);
+    }
+    .visaCard .row {
+        margin: 0;
+        padding: var(--padding-small);
+    }
+    
+}
+@media (min-width: 1200px) and (max-width: 1301px) {
+    .visaCard .visaCardPhone div span {
+        font-size: var(--font-x-small);
+    }
+    .visaCard .row {
+        margin: 0;
+        padding: 0;
+    }
 }

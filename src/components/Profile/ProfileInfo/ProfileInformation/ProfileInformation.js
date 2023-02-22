@@ -1,14 +1,27 @@
 import './profileInformation.css';
-import { Row , Col } from 'react-bootstrap';
-import { FaTwitter ,  FaInstagram } from 'react-icons/fa';
+import { Row, Col } from 'react-bootstrap';
+import { FaTwitter, FaInstagram } from 'react-icons/fa';
 import { MdFacebook } from 'react-icons/md';
-import ProfileInformationData from './ProfileInformationData/ProfileInformationData';
+import profile from '../../../../JsonData/Profile.json';
+
 
 export default function ProfileInformation() {
 
-    return(
-        
-        <Col xs={12} lg={4} className='ProfileInformation'>
+    const Data = [
+        " Ahmed khaled",
+        " (+20) 10 21 03  24 25",
+        " ahmedkhaled7229@gmail.com",
+        " Egypt,Cairo,Elmaade",
+        [
+            <MdFacebook />,
+            <FaTwitter />,
+            <FaInstagram />
+        ],
+        " Alec M. Thompson"
+    ]
+    return (
+
+        <Col xs={12} xl={4} className='ProfileInformation'>
 
             <Row className='ProfileInformationTitle'>
                 <Col>
@@ -30,12 +43,25 @@ export default function ProfileInformation() {
             </Row>
 
             <Row className='ProfileInformationData'>
-                <ProfileInformationData head="full name: " data=" Ahmed khaled" />
-                <ProfileInformationData head="mobile: " data=" (+20) 10 21 03  24 25" />
-                <ProfileInformationData head="email: " data=" ahmedkhaled7229@gmail.com" />
-                <ProfileInformationData head="location: " data=" Egypt,Cairo,Elmaade" />
-                <ProfileInformationData head="social: " data={ [<MdFacebook key='1' />,<FaTwitter key='2' />,<FaInstagram key='3' />]} />
-                <ProfileInformationData head="full name: " data=" Alec M. Thompson" />
+                {profile && profile.ProfileInformationData.map((data , i) => {
+
+                    return (
+
+                        <Row className='ProfileInformationData' key={data.id}>
+
+                            <Col>
+                                <span>
+                                    {data.head}
+                                </span>
+
+                                <span>
+                                    {Data[i]}
+                                </span>
+                            </Col>
+
+                        </Row>
+                    )
+                })}
             </Row>
 
         </Col>

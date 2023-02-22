@@ -29,7 +29,7 @@ export default function NotificationsBox() {
         
         <Row className='notoficitionsBox'>
 
-            <Row>
+            <Row className='notoficitionsBoxTitle'>
                 <Col>
                     <h6>Notifications</h6>
                     <span>Notifications on this page use Toasts from Bootstrap. Read more details here.</span>

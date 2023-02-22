@@ -1,6 +1,4 @@
-/* Start profile Styling */
-
-.profile > .profile-info {
+.profile .profile-info {
     width: 95%;
     margin: auto;
     position: relative;
@@ -10,30 +8,6 @@
     padding: var(--section-padding);
     background-color: #fff;
 }
-.profile > .profile-info > .row:nth-child(3) > .row {
-    margin: 15px
-}
-.profileProjects > div > .row {
-    padding: 10px;
-}
-.profile > .row:nth-child(2) > .row:nth-child(3) > div > .row:last-child > div > img {
-    width: 20px;
-    border-radius: 50%;
-    position: absolute;
-}
-.profile > .row:nth-child(2) > .row:nth-child(3) > div > .row:last-child > div > img:first-child {
-    right: 0;
-}
-.profile > .row:nth-child(2) > .row:nth-child(3) > div > .row:last-child > div > img:nth-child(2) {
-    right: 20px;
-}
-.profile > .row:nth-child(2) > .row:nth-child(3) > div > .row:last-child > div > img:nth-child(3) {
-    right: 5px;
-}
-.profile > .row:nth-child(2) > .row:nth-child(3) > div > .row:last-child > div > img:last-child {
-    right: -10px;
-}
-/* End profile Styling */
 
 .profileMode {
     background: rgb(52,71,103);

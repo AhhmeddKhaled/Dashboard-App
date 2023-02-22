@@ -1,25 +1,104 @@
-.project  {
-    padding: 10px 0;
+.projects {
+    box-shadow: var(--box-shadow);
+    margin-right: 14px;
+    padding: 10px;
 }
-.project:not(:last-child) {
-    border-bottom: 1px solid rgb(165, 162, 162);
+
+.projects .row {
+    padding: var(--padding-larg) 0;
 }
-.project  .imgAndTitle,
-.project .completion {
+
+.projects .projectHead div:first-child h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projects .projectHead div:first-child svg {
+    color: blue;
+    margin-top: -4px;
+    width: 25px;
+    height: 25px;
+}
+
+.projects .projectHead div:first-child span {
+    margin-left: -4px;
+    opacity: var(--opacity);
+}
+
+.projects .projectHead div:last-child svg {
+    width: 30px;
+    height: 25px;
+}
+
+.projects .projectTitles div {
     display: flex;
     align-items: center;
 }
-.project  .imgAndTitle img {
+
+.projects .projectTitles div span {
+    text-transform: uppercase;
+    font-size: 10px;
+    opacity: var(--opacity);
+}
+
+.project:not(:last-child) {
+    border-bottom: 1px solid rgb(165, 162, 162);
+}
+
+.project .imgAndTitle img {
     width: 30px;
     margin-right: 5px;
 }
-.project  .imgAndTitle span {
-    font-size: 14px;
+
+.project .imgAndTitle span {
+    font-size: var(--font-small);
     font-weight: bold;
     opacity: var(--opacity);
 }
-.project  .price span {
-    font-size: 11px;
+
+.project .price span {
+    font-size: var(--font-small);
     font-weight: bold;
     opacity: var(--opacity);
+}
+
+@media (max-width: 575px) {
+    .projects .projectTitles div {
+        padding: 0;
+    }
+
+    .projects .projectTitles div span {
+        font-size: calc(var(--font-small) - 3px);
+    }
+
+    .project div {
+        padding: 0;
+    }
+
+    .project .imgAndTitle img {
+        width: 10px;
+        margin-right: 1px;
+    }
+
+    .project .imgRadius img {
+        width: 15px;
+    }
+
+    .project .imgAndTitle span {
+        font-size: var(--font-x-small);
+    }
+
+    .project .price span {
+        font-size: var(--font-x-small);
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .project .imgAndTitle span {
+        font-size: var(--font-x-small);
+    }
+
+    .project .price span {
+        font-size: var(--font-x-small);
+    }
 }

@@ -51,9 +51,9 @@ export default function Formm(props) {
             <span>
 
             { props.acount }
-                <a>
+                <Link to={props.link}>
                     { props.sign }
-                </a>
+                </Link>
             </span>
         </Col>
     </Row>

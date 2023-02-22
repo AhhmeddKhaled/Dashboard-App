@@ -3,12 +3,13 @@
 }
 .profileHead .profileHeadInfo {
     margin-left: -30px;
+    text-align: left;
 }
 .profileHead .profileHeadInfo h6 {
-    font-size: 18px;
+    font-size: var(--font-larg);
 }
 .profileHead .profileHeadInfo span {
-    font-size: 14px;
+    font-size: var(--font-x-medium);
     opacity: var(--opacity);
     display: block;
 }
@@ -21,7 +22,7 @@
     transition: .3s;
     cursor: pointer;
 }
-.profileHead .profileHeadIcon > span:hover {
+.profileHead .profileHeadIcon > span.background {
     box-shadow: var(--box-shadow);
 }
 .profileHead .profileHeadIcon > span svg {
@@ -34,4 +35,9 @@
 }
 .profileHead hr {
     opacity: .1;
+}
+@media (max-width: 1199px) {
+.profileHead .profileHeadInfo {
+    text-align: center;
+}
 }

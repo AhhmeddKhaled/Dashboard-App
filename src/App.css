@@ -15,7 +15,6 @@
   --padding-medium: 8px;    
   --padding-larg: 12px;    
 }
-
 a {
   text-decoration: none !important;
 }
@@ -23,13 +22,18 @@ ul {
   list-style: none;
 }
 .app {
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 24px !important;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
   color: rgb(52, 71, 103);
+  overflow-x: hidden;
+}
+.app .burger {
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 30px;
+}
+.app .burger svg {
+  color: #000;
+  height: 30px;
 }
 .app.light-mode {
   color: #ddd;

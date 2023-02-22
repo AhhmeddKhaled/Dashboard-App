@@ -29,7 +29,7 @@ ChartJS.register(
 
     return (
 
-        <Col className='canvas'>
+        <Col className='canvas position-relative rounded'>
             <Line
                 data={chartData}
             />

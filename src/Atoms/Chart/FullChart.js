@@ -56,23 +56,19 @@ export default function Chart() {
   ];
 
   return (
-    <Row className="charAt">
+    <Row className="charAt justify-content-between mb-4">
       {res &&
         res.data.map((item, i) => {
           return (
-            <Col xs={4} className="chartCard" key={i}>
-              
-              {chartData[i]}
-
-              <Col className="info">
-                <h4> {item.title} </h4>
-                <span> {item.parag} </span>
+            <Col className="chartCard position-relative p-4 rounded" key={i}>
+                  { chartData[i] }
+              <Col className="info pb-3">
+                    <h4 className='m-0'> {item.title} </h4>
+                    <span> {item.parag} </span>
               </Col>
-
               <Col className="day">
                 <MdSchedule />
-
-                <span>{item.day}</span>
+                    <span>{item.day}</span>
               </Col>
             </Col>
           );

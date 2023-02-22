@@ -1,28 +1,22 @@
 /* Start Dashboard Box Styling */
-.dashboardBox {
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
 .dashboardBox .card {
-    position: relative;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
     width: 23%;
     background-color: inherit;
+    box-shadow: var(--box-shadow);
+    border: none;
 }
 .dashboardBox  .card .box {
-    position: absolute;
     left: 20px;
     top: 10%;
     transform: translateY(-50%);
     width: 60px;
     height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--border-radius);
+}
+.dashboardBox  .card .card-info {
+    text-align: right;
+}
+.dashboardBox  .card .card-info span {
+    opacity: var(--opacity);
 }
 .dashboardBox  .card:first-child .box {
     background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
@@ -41,25 +35,30 @@
     width: 20px;
     height: 20px;
 }
-.dashboardBox .card .card-info {
-    text-align: right;
-    padding: 10px;
-}
-.dashboardBox .card .card-info span {
-    display: block;
-}
 .dashboardBox .card .card-info .card-info-number {
     font-weight: bold;
     font-size: 20px;
 }
-.dashboardBox .card .card-rate {
-    padding: 10px;
-}
 .dashboardBox .card .card-rate p {
     font-weight: normal;
-    font-size: 17px;
+    font-size: var(--font-larg);
 }
 .dashboardBox .card .card-rate p span {
     color: rgb(99, 230, 99);
 }
 /* End Dashboard Box Styling */
+
+/* Start Media  */
+@media (max-width: 600px) {
+.dashboardBox .card {
+    width: 100%;
+    margin-bottom: 30px;
+}
+}
+@media (min-width: 600px) and (max-width: 1199px){
+    .dashboardBox .card {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+}
+/* End Media  */

@@ -8,11 +8,11 @@ export default function Download(props) {
     return(
         
         <Row className="signIn-nav">
-        <Col xs={3}>
+        <Col xs={6} lg={3}>
             <h4>Material Dashboard 2</h4>
         </Col>
 
-        <Col xs={6}>
+        <Col xs={12} lg={6}>
             <span>
                 <MdDonutLarge /> 
                 <span>Dashboard</span>
@@ -34,7 +34,7 @@ export default function Download(props) {
             </span>
         </Col>
 
-        <Col xs={3}>
+        <Col xs={6} lg={3}>
             <Button>Free Download</Button>
         </Col>
 

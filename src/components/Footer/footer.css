@@ -8,19 +8,43 @@
     display: flex;
     align-items: center;
 }
+.footer div {
+    padding: 0;
+}
 .footer div:first-child span,
 .footer div:last-child span {
-    font-size: 14px;
+    font-size: var(--font-x-small)
 }
+
 .footer div:last-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .footer div:last-child span {
     cursor: pointer;
 }
+
 .footer.color {
     color: #fff;
 }
+
 /* End Footer Stylng */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer div {
+        width: 100%
+    }
+    .footer div:first-child {
+        display: flex;
+        justify-content: center;
+    }
+    .footer div:last-child {
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .footer div:last-child span {
+        margin: 0 30px;
+    }
+}

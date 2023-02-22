@@ -1,4 +1,3 @@
-import './profile.css';
 
 import { Row  } from 'react-bootstrap';
 

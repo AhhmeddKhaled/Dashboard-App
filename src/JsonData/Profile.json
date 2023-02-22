@@ -1,0 +1,101 @@
+{
+    "platformEmail": [
+        [
+            "Email me when someone follows me",
+            "Email me when someone answers on my post",
+            "Email me when someone mentions me"
+        ],
+        [
+            "New launches and projects",
+            "Monthly product updates",
+            "Subscribe to newsletter"
+        ]
+    ],
+    "ProfileInformationData": [
+        {
+            "id": 1,
+            "head": "full name: "
+        },
+        {
+            "id": 2,
+            "head": "mobile: "
+        },
+        {
+            "id": 3,
+            "head": "email: "
+        },
+        {
+            "id": 4,
+            "head": "location: "
+        },
+        {
+            "id": 5,
+            "head": "social: "
+        },
+        {
+            "id": 6,
+            "head": "full name: "
+        }
+    ],
+    "conversationsData": [
+        {
+            "id": 1,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/kal-visuals-square.3210e28a48ff572ae88b.jpg",
+            "name": "Sophie B.",
+            "parag": "Hi! I need more information.."
+        },
+        {
+            "id": 2,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/marie.c28f32663b6432b46f78.jpg",
+            "name": "Anne Marie",
+            "parag": "Awesome work, can you.."
+        },
+        {
+            "id": 3,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/ivana-square.f7bc23b269d1d2509c82.jpg",
+            "name": "Ivanna",
+            "parag": "About files I can.."
+        },
+        {
+            "id": 4,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/team-4.85c82b6e60178804017f.jpg",
+            "name": "Peterson",
+            "parag": "Have a great afternoon.."
+        },
+        {
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/team-3.0ef0be95e6850814c79e.jpg",
+            "name": "Nick Daniel",
+            "parag": "Hi! I need more information.."
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/home-decor-1.05e218fd495ccc65c99d.jpg",
+            "number": "project #1",
+            "name": "modern",
+            "info": "As Uber works through a huge amount of internal management turmoil."
+        },
+        {
+            "id": 2,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/home-decor-2.b4e5397c9846645ba275.jpg",
+            "number": "project #2",
+            "name": "scandinavian",
+            "info": "Music is something that everyone has their own specific opinion about."
+        },
+        {
+            "id": 3,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/home-decor-4.5b448fd339a14695f6aa.jpeg",
+            "number": "project #3",
+            "name": "minimalist",
+            "info": "Different people have different taste, and various types of music."
+        },
+        {
+            "id": 4,
+            "src": "https://demos.creative-tim.com/material-dashboard-react/static/media/home-decor-3.74d13fcbd3c631fc7908.jpg",
+            "number": "project #4",
+            "name": "gothic",
+            "info": "Why would anyone pick blue over pink? Pink is obviously a better color."
+        }
+    ]
+}

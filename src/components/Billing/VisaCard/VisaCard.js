@@ -7,13 +7,13 @@ export default function VisaCard() {
 
     return(
         
-          <Col  lg='5' xs='12' className='visaCard 
+          <Col  xs={12} sm={5} className='visaCard 
           position-relative 
           d-flex
           flex-column
           justify-content-around 
           rounded
-          mb-sm-3 mb-lg-1'>
+          '>
             <Col className='visacardOverlay
             position-absolute
             w-100
@@ -21,13 +21,13 @@ export default function VisaCard() {
             '></Col>
 
             <Row className='visaCardWifi'>
-              <Col>
+              <Col className='p-0'>
                 <FaWifi />
               </Col>
             </Row>
 
             <Row className='visaCardPhone'>
-              <Col>
+              <Col className='p-0'>
                 <span>
                     { billing.visaCard.phone}
                 </span>
@@ -35,16 +35,16 @@ export default function VisaCard() {
             </Row>
 
             <Row className='visaCardJack'>
-              <Col xs={5}>
+              <Col xs={6} className='p-0'>
                 <span>
                     { billing.visaCard.card}
                 </span>
-                <span>
+                <span className='font-weight-bold'>
                     { billing.visaCard.jack}
                 </span>
               </Col>
 
-              <Col>
+              <Col className='p-0'>
                 <span> 
                     {billing.visaCard.expires}
                 </span>
@@ -53,9 +53,7 @@ export default function VisaCard() {
                 </span>
               </Col>
 
-              <Col
-              className='d-flex align-items-center justify-content-end'
-              >
+              <Col className='p-0'>
                 <img src={billing.visaCard.src} alt='' />
               </Col>
             </Row>

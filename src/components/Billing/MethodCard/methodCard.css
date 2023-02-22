@@ -1,41 +1,27 @@
 .method {
-    border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    padding: var(--section-padding);
+    padding: var(--padding-larg);
 }
 .method .method-info,
 .method .method-cards  {
-    margin: 0;
-    padding: 10px;
-}
-.method .method-info div {
-    padding: 0;
-    display: flex;
-    align-items: center;
+    padding: var(--padding-medium);
 }
 .method .method-info .payment span {
-    font-size: 18px;
+    font-size: var(--font-larg);
     font-weight: bold;
 }
 .method .method-info .new-card button {
     background-color: rgb(25, 25, 25);
-    padding: 8px 10px;
+    padding: var(--padding-medium) var(--padding-larg);
+    border: none;
 }
-.method .method-info .new-card span svg {
+.method .method-info .new-card button svg {
     margin: -3px 0 0 0;
     width: 20px;
     height: 20px;
 }
-.method .method-cards  {
-    justify-content: space-between;
-}
 .method .method-cards  .methodCard {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border: 1px solid;
-    border-radius: var(--border-radius);
+    border: 1px solid #333;
 }
 .method .method-cards  .methodCard span {
     margin-right: 10px;
@@ -45,7 +31,6 @@
     height: 25px;
     margin-right: 10px;
 }
-
 .method .method-cards  .methodCard div:first-child span {
     margin-top: -5px;
     opacity: var(--opacity);
@@ -59,5 +44,27 @@
 .method .method-cards  .methodCard div:last-child span svg {
     width: 25px;
     height: 25px;
+
+}
+@media (max-width: 575px) {
+    .method .method-info .payment span {
+        font-size: var(--font-x-medium);
+    }
+    .method .method-info .new-card button {
+        padding: var(--padding-small);
+    }
+    .method .method-info .new-card button span {
+        font-size: var(--font-small);
+        text-transform: capitalize;
+    } 
+    .method .method-info .new-card button svg {
+        width: 10px;
+    }
+
+}
+@media (min-width: 768px) {
+    .method .method-cards  .methodCard {
+        width: 48%;
+    }
 
 }

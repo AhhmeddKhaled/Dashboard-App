@@ -1,10 +1,83 @@
-.ProfileProjects {
-    justify-content: space-between;
-    margin: 15px;
+.profileProjects > div > .row {
+    padding: 10px;
 }
 .ProfileProjects .ProfileProjectsTitle div h6 {
-    font-size: 18px;
+    font-size: var(--font-larg);
     font-weight: bold;
     text-transform: capitalize;
-    padding: 0 20px;
+}
+.ProfileProject .ProfileProjectImg div img {
+    width: 150px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+.ProfileProject .ProfileProjectInfo {
+    height: 130px;
+}
+.ProfileProject .ProfileProjectInfo div > span {
+    display: block;
+    margin-bottom: 10px;
+}
+.ProfileProject .ProfileProjectInfo div .ProfileProjectInfoNumber {
+    opacity: var(--opacity);
+    font-size: var(--font-x-medium);
+    margin-top: 10px;
+}
+.ProfileProject .ProfileProjectInfo div .ProfileProjectInfoName {
+    font-weight: bold;
+    font-size: var(--font-larg);
+    text-transform: capitalize;
+}
+.ProfileProject .ProfileProjectInfo div .ProfileProjectInfoInfo {
+    font-size: var(--font-x-small);
+}
+.ProfileProject .ProfileView > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ProfileProject .ProfileView > div button {
+    padding: var(--padding-medium) var(--padding-larg);
+    border-radius: var(--border-radius);
+    color: #ddd;
+    background: var(--main-color) ;
+    border: 1px solid var(--main-color);
+    text-transform: uppercase;
+    font-size: var(--font-small);
+    font-weight: bold;
+    transition: .3s;
+    cursor: pointer;
+}
+.ProfileProject .ProfileView > div button:hover {
+    box-shadow: 1px 1px 6px rgb(195, 195, 203);
+}
+
+.ProfileProject .ProfileView >  div > img {
+    width: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+.ProfileProject .ProfileView > div > img:first-child {
+    right: 0;
+}
+.ProfileProject .ProfileView > div > img:nth-child(2) {
+    right: 20px;
+}
+.ProfileProject .ProfileView > div > img:nth-child(3) {
+    right: 5px;
+}
+.ProfileProject .ProfileView > div > img:last-child {
+    right: -10px;
+}
+@media (max-width: 1199px) {
+.ProfileProject {
+    margin-bottom: 30px;
+}
+.ProfileProjects .ProfileProjectsTitle div h6 {
+    padding: 0;
+}
+.ProfileProject .ProfileProjectImg div img {
+    width: 100%;
+}
 }

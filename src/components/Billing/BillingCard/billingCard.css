@@ -1,25 +1,27 @@
-.billing .cards .card {
+.app-cards {
+    padding-right: 0 !important;
+}
+.card {
     box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
     background-color: inherit;
 }
-.billing .cards .card > .row {
+.card:first-child {
+    margin-right: 5px;
+}
+.card > .row {
     margin: 20px 0;
 }
-.billing .cards .card > .row > div {
+.card > .row > div {
     text-align: center;
 }
-
-.billing .cards .card > .row > div span {
+.card > .row > div span {
     display: block;
 }
-
-.billing .cards .card > .card-icon div {
+.card > .card-icon div {
     display: flex;
     justify-content: center;
 }
-
-.billing .cards .card > .card-icon div span {
+.card > .card-icon div span {
     background: var(--main-color);
     -mo-width: fit-content;
     width: -moz-fit-content;
@@ -27,23 +29,24 @@
     color: #fff;
     border-radius: var(--border-radius);
 }
-
-.billing .cards .card > .card-icon div span svg {
+.card > .card-icon div span svg {
     width: 30px;
     height: 30px;
 }
-
-.billing .cards .card > .card-info div .card-info-title {
+.card > .card-info div .card-info-title {
     font-weight: bold;
     font-size: 20px;
     text-transform: capitalize;
 }
-
-.billing .cards .card > .card-info div .card-info-paragraph {
+.card > .card-info div .card-info-paragraph {
     opacity: var(--opacity);
     font-size: 14px;
 }
-
-.billing .cards .card > .card-price div span {
+.card > .card-price div span {
     font-weight: bold;
+}
+@media (max-width: 575px) {
+    .app-cards {
+        padding: 0 !important;
+    }
 }

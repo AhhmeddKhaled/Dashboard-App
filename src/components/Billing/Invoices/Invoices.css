@@ -1,9 +1,7 @@
 .invoices {
     box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
-    padding: var(--section-padding);
+    padding: var(--padding-larg);
 }
-
 .invoices .invoices-data,
 .invoices .invoices-info {
     margin: 20px 0;
@@ -11,51 +9,44 @@
 .invoices .invoices-data span {
     display: block;
 }
-
-.invoices .invoices-info,
-.invoices .invoices-data {
-    justify-content: space-between;
-    align-items: center;
-}
-
 .invoices .invoices-info .invoices-title span {
     font-size: 20px;
     font-weight: bold;
 }
-
 .invoices .invoices-info .invoices-button {
     text-align: right;
 }
 .invoices .invoices-info .invoices-button button {
     border: none;
     background: var(--main-color);
-    padding: 8px 12px;
-    font-size: 14px;
+    padding: var(--padding-medium) var(--padding-larg);
+    font-size: var(--font-x-medium);
     border-radius: var(--border-radius);
 }
-
 .invoices .invoices-data div:first-child .month {
     font-weight: bold;
     margin: 10px 0 3px 0;
-    font-size: 14px;
+    font-size: var(--font-x-medium);
 }
 
 .invoices .invoices-data div:first-child .id {
     opacity: var(--opacity);
-    font-size: 13px;
-}
-.invoices .invoices-data div:last-child {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    font-size: var(--font-x-medium);
 }
 .invoices .invoices-data div:last-child .price {
     margin-right: 20px;
     opacity: var(--opacity);
 }
-
 .invoices .invoices-data div:last-child .icon {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+}
+@media (min-width: 1200px) and (max-width: 3001px) {
+    .invoices .invoices-data div:first-child .month {
+        font-size: var(--font-small);
+    }
+    .invoices .invoices-data div:last-child .price {
+        font-size: var(--font-x-small);
+    }
 }

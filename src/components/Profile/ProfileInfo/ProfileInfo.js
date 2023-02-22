@@ -1,7 +1,7 @@
 import './profileInfo.css';
 
 import ProfileHead from './ProfileHead/ProfileHead';
-import PlatformSettings from './../PlatformSettings/PlatformSettings';
+import PlatformSettings from './platformSettings/PlatformSetting';
 import ProfileInformation from './ProfileInformation/ProfileInformation';
 import Conversations from './Conversations/Conversations';
 import ProfileProjects from './../ProfileProjects/ProfileProjects'

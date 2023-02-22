@@ -1,65 +1,93 @@
-
 .information {
-    padding: var(--section-padding);
-    border-radius: var(--border-radius);
+    padding: var(--padding-larg);
     box-shadow: var(--box-shadow);
     margin-right: 10px;
     margin-left: 10px;
 }
+
 .information .information-title {
-    padding: 10px;
+    padding: var(--padding-medium);
 }
+
 .information .information-title h6 {
-    font-size: 18px;
+    font-size: var(--font-larg);
     font-weight: bold;
 }
+
 .information .information-data {
     padding: 30px 0;
 }
+
 .information .information-data .information-data-info {
-    padding: var(--section-padding) 20px;
+    padding: var(--padding-larg) 20px;
 }
+
 .information .information-data .information-data-info .information-data-info-title {
     padding: 0 30px;
 }
+
 .information .information-data .information-data-info .information-data-info-title span {
-    font-size: 16px;
+    font-size: var(--font-medium);
     font-weight: bold;
-    text-transform: capitalize;
 }
-.information .information-data .information-data-info .information-data-info-delete,
-.information .information-data .information-data-info .information-data-info-edit {
-    display: flex;
-    justify-content: center;
-}
+
 .information .information-data .information-data-info .information-data-info-delete span,
 .information .information-data .information-data-info .information-data-info-edit span {
-    font-size: 14px;
+    font-size: var(--font-x-medium);
     font-weight: bold;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
     transition: .3s;
     cursor: pointer;
 }
+
 .information .information-data .information-data-info .information-data-info-delete span {
     color: rgb(226, 43, 43);
 }
+
 .information .information-data .information-data-info .information-data-info-delete span:hover,
 .information .information-data .information-data-info .information-data-info-edit span:hover {
     opacity: var(--opacity);
 }
+
 .information .information-data .information-cv .row div {
     padding: 0 40px;
-    text-transform: capitalize;
 }
+
 .information .information-data .information-cv .row div span:first-child {
     opacity: var(--opacity);
-    font-size: 12px;
-
+    font-size: var(--font-small);
 }
+
 .information .information-data .information-cv .row div span:last-child {
     font-weight: bold;
-    font-size: 14px;
-
+    font-size: var(--font-x-medium);
+}
+@media (max-width: 575px) {
+    .information {
+        padding: var(--padding-small);
+    }
+    .information .information-title h6 {
+        font-size: var(--font-medium);
+    }
+    .information .information-data .information-data-info {
+        padding: calc(var(--padding-larg) + 3px);
+    }
+    .information .information-data .information-data-info .information-data-info-title {
+        padding: 0 var(--padding-larg);
+    }
+    .information .information-data .information-cv .row div {
+        padding: 0 20px;
+    }
+    .information .information-data .information-data-info .information-data-info-title span {
+        font-size: var(--font-x-small);
+    }
+    .information .information-data .information-data-info .information-data-info-delete span,
+    .information .information-data .information-data-info .information-data-info-edit span {
+        font-size: var(--font-x-small);
+    }
+    .information .information-data .information-cv .row div span:first-child {
+        font-size: var(--font-x-small);
+    }
+    .information .information-data .information-cv .row div span:last-child {
+        font-size: var(--font-x-small);
+    }
 }

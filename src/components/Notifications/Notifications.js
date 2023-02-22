@@ -1,11 +1,10 @@
-import './notifications.css';
-import { Row  } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import NotificationsMS from './NotificationsMS/NotificationsMS';
 import NotificationsBox from './NotificationsBox/NotificationsBox';
 
-function Notifications() {
+export default function Notifications() {
 
-    return(
+    return (
         <Row className="notifications">
 
             <NotificationsMS />
@@ -17,5 +16,3 @@ function Notifications() {
 
     );
 }
-
-export default Notifications;

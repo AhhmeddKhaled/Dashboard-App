@@ -9,26 +9,25 @@ import {
 import "./billingApp.css";
 import billing from '../../../JsonData/Billing.json';
 
-console.log(window.navigator)
 export default function BillingApp() {
 
 	const icons = [<MdExpandMore />, <MdExpandLess />];
 	const iconsTwo = [<MdExpandLess />, <MdExpandLess />, <MdExpandLess />, <MdPriorityHigh />];
 
 	return (
-		<Col className="billing-app mt-3 mt-xl-0">
+		<Col className="billing-app mt-3 mt-xl-0 rounded">
 			<Row className="billing-app-info">
 				<Col className="billing-app-info-title">
 					<h6>Your Transaction's</h6>
 				</Col>
-				<Col className="billing-app-info-date">
+				<Col className="billing-app-info-date d-flex align-items-center justify-content-end">
 					<MdOutlineDateRange />
 					<span>23 - 30 March 2023</span>
 				</Col>
 			</Row>
 			<Row className="billing-app-newest">
 				<Col>
-					<span>newest</span>
+					<span className='text-uppercase'>newest</span>
 				</Col>
 			</Row>
 
@@ -38,7 +37,7 @@ export default function BillingApp() {
 
 					return (
 
-						<Row className="billing-app-card">
+						<Row className="billing-app-card judtify-content-between align-items-center">
 							<Col xs={2} className="billing-app-card-icon">
 								<span>
 									{icons[i]}
@@ -70,7 +69,7 @@ export default function BillingApp() {
 
 			<Row className="billing-app-yesterday">
 				<Col>
-					<span>yesterday</span>
+					<span className='text-uppercase'>yesterday</span>
 				</Col>
 			</Row>
 
@@ -80,7 +79,7 @@ export default function BillingApp() {
 
 					return (
 
-						<Row className="billing-app-card">
+						<Row className="billing-app-card judtify-content-between align-items-center">
 							<Col xs={2} className="billing-app-card-icon">
 								<span>
 									{iconsTwo[i]}

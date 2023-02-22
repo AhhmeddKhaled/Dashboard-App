@@ -23,7 +23,7 @@ export default function SignIn() {
         ]}
         acount="Don't have an account?"
         sign="Sign Ub"
-        // link="/SignUb"
+        link="/SignUb"
         submit='Sign in'
         toggle={
         <Toggle />

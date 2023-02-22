@@ -1,85 +1,112 @@
-.Projects-Table {
+.Projects {
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: var(--section-padding);
+    position: relative;
+    padding: 50px 20px;
+    margin: 40px 0;
 }
 
-.Projects-Table  .project-table {
-    padding: 10px;
-}
-
-.Projects-Table  .project-table:not(:last-child) {
-    border-bottom: 1px solid rgb(219, 210, 210);
-}
-
-.Projects-Table .project-table  .project-title span,
-.Projects-Table .project-table .project-price span, 
-.Projects-Table .project-table .project-status span {
+.Projects::before {
+    content: 'Projects Table';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94%;
+    background: var(--main-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     font-weight: bold;
 }
 
-.Projects-Table .project-head div:not(:first-child,:last-child),
-.Projects-Table > .project-table > div:not(:first-child,:last-child) {
+.Projects .project-table,
+.Projects .project-head {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.Projects .project-table:not(:last-child) {
+    border-bottom: 1px solid rgb(219, 210, 210);
+}
+
+.Projects .project-table .project-title span,
+.Projects .project-table .project-price span,
+.Projects .project-table .project-status span {
+    font-weight: bold;
+}
+
+.Projects .project-head div:not(:first-child, :last-child),
+.Projects>.project-table>div:not(:first-child, :last-child) {
     text-align: center;
 }
 
-.Projects-Table .project-head div span {
+.Projects>.project-head>div:last-child {
+    padding-right: 0;
+}
+
+.Projects .project-head div span {
     text-transform: uppercase;
 }
 
-.Projects-Table > .project-table > div:first-child {
+.Projects>.project-table>div:first-child {
     display: flex;
     align-items: center;
 }
 
-.Projects-Table .project-table .project-info img {
+.Projects .project-table .project-info img {
     width: 30px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.Projects-Table  .project-head div span,
-.Projects-Table  .project-table  .project-status span ,
-.Projects-Table  .project-table .project-rate span {
+.Projects .project-head div span,
+.Projects .project-table .project-status span,
+.Projects .project-table .project-rate span {
     opacity: var(--opacity);
 }
 
-.Projects-Table  .project-head div span {
+.Projects .project-head div span {
     font-size: 10px;
 }
 
-.Projects-Table  .project-table .project-price span,
-.Projects-Table  .project-table .project-status span,
-.Projects-Table  .project-table .project-rate span {
+.Projects .project-table .project-price span,
+.Projects .project-table .project-status span,
+.Projects .project-table .project-rate span {
     font-size: 12px;
 }
 
-.Projects-Table  .project-head div:last-child, 
-.Projects-Table  .project-table  .project-icon {
+.Projects .project-head div:last-child,
+.Projects .project-table .project-icon {
     text-align: right;
 }
 
-.Projects-Table .project-table .project-icon svg {
+.Projects .project-table .project-icon svg {
     margin-left: -25px;
     cursor: pointer;
 }
 
-.Projects-Table > .project-table .project-status span {
+.Projects>.project-table .project-status span {
     font-size: 14px;
 }
 
-.Projects-Table  .project-table .project-rate {
+.Projects .project-table .project-rate {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Projects-Table  .project-table .project-rate span {
+
+.Projects .project-table .project-rate span {
     display: inline-block;
 }
 
-.Projects-Table  .project-table .project-rate .rate {
+.Projects .project-table .project-rate .rate {
     margin-right: 15px;
     width: 20px;
 }
 
-.Projects-Table  .project-table .project-rate span:last-child {
+.Projects .project-table .project-rate span:last-child {
     background-color: #ddd;
     width: 150px;
     height: 6px;
@@ -87,8 +114,26 @@
     position: relative;
 }
 
-.Projects-Table  .project-table .project-rate span:last-child span {
+.Projects .project-table .project-rate span:last-child {
+    width: 100%;
+}
+
+.Projects .project-table .project-rate span:last-child span {
     position: absolute;
     left: 0;
     height: 100%;
+}
+
+@media (max-width: 991px) {
+    .Projects .project-table .project-info img {
+        width: 15px;
+    }
+
+    .Projects .project-table .project-title span,
+    .Projects .project-table .project-price span,
+    .Projects .project-table .project-status span,
+    .Projects .project-head div span {
+        font-size: var(--font-x-small);
+
+    }
 }

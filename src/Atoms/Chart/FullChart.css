@@ -1,15 +1,22 @@
-.chartCard {
-    position: relative;
-    width: 32% !important;
-    padding: 15px;
+.charAt>div div:last-child svg,
+.charAt>div div:nth-child(2) span,
+.charAt>div div:last-child span {
+    opacity: var(--opacity);
+}
+.charAt .chartCard {
+    width: 30%;
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+.charAt .chartCard:not(:last-child) {
+    margin-right: 15px;
 }
 .chartCard .canvas {
-    position: relative;
     top: -40px;
-    border-radius: var(--border-radius);
 }
 .chartCard .canvas canvas {
     border-radius: var(--border-radius);
+    padding: 10px;
 }
 .chartCard:first-child .canvas canvas {
     background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
@@ -21,17 +28,46 @@
     background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
 }
 .chartCard .info {
-    padding-bottom: 10px;
     margin-top: -20px;
 }
 .chartCard .info h4 {
-    font-size: 20px;
+    font-size: var(--font-larg);
     font-weight: bold;
-    margin: 0;
 }
 .chartCard .info span {
-    font-size: 14px;
+    font-size: var(--font-x-medium);
 }
 .chartCard .day svg {
     margin-right: 2px;
+}
+@media (max-width: 767px) {
+    .charAt .chartCard {
+        width: 100%;
+    }
+
+    .charAt .chartCard:not(:last-child) {
+        margin: 0 0 30px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .charAt {
+        flex-direction: row-reverse;
+    }
+
+    .charAt .chartCard {
+        width: 48%;
+    }
+
+    .charAt .chartCard:not(:first-child) {
+        margin: 0 0 30px 0;
+    }
+
+    .charAt .chartCard:last-child {
+        order: 1;
+    }
+
+    .charAt .chartCard:first-child {
+        order: 12;
+    }
 }

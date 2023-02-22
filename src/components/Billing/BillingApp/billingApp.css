@@ -1,40 +1,36 @@
 .billing-app {
-    padding: var(--section-padding);
-    border-radius: var(--border-radius);
+    padding: var(--padding-larg);
     box-shadow: var(--box-shadow);
 }
+
 .billing-app .billing-app-info,
 .billing-app .billing-app-newest,
 .billing-app .billing-app-yesterday,
 .billing-app .billing-app-card {
-    padding: var(--section-padding);
+    padding: var(--padding-larg);
 }
+
 .billing-app .billing-app-info .billing-app-info-title h6 {
-    font-size: 18px;
+    font-size: var(--font-larg);
+    margin-top: 5px;
     font-weight: bold;
 }
-.billing-app .billing-app-info .billing-app-info-date  {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 .billing-app .billing-app-info .billing-app-info-date svg {
     margin-right: 5px;
 }
+
 .billing-app .billing-app-info .billing-app-info-date span {
     opacity: var(--opacity);
 }
+
 .billing-app .billing-app-newest div span,
 .billing-app .billing-app-yesterday div span {
     opacity: var(--opacity);
-    font-size: 13px;
-    text-transform: uppercase;
+    font-size: var(--font-small);
     font-weight: bold;
 }
-.billing-app .billing-app-card {
-    justify-content: space-between;
-    align-items: center;
-}
+
 .billing-app .billing-app-card .billing-app-card-icon span {
     width: 30px;
     height: 30px;
@@ -42,40 +38,86 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .3s;
+    transition: 0.3s;
     cursor: pointer;
 }
+
 .billing-app .billing-app-card .billing-app-card-icon span:hover {
     opacity: var(--opacity);
 }
-.billing-app .billing-app-card:not(:first-child,:last-child) .billing-app-card-icon  span {
-border: 1px solid rgb(68, 213, 68);
+
+.billing-app .billing-app-card:not(:first-child, :last-child) .billing-app-card-icon span {
+    border: 1px solid rgb(68, 213, 68);
 }
-.billing-app .billing-app-card:last-child .billing-app-card-icon  span {
-    border: 1px solid rgb(47,40,40);
+
+.billing-app .billing-app-card:last-child .billing-app-card-icon span {
+    border: 1px solid rgb(47, 40, 40);
 }
-.billing-app .billing-app-card:not(:first-child,:last-child) .billing-app-card-icon  span svg,
-.billing-app .billing-app-card:not(:first-child,:last-child) .billing-app-card-price span {
+
+.billing-app .billing-app-card:not(:first-child, :last-child) .billing-app-card-icon span svg,
+.billing-app .billing-app-card:not(:first-child, :last-child) .billing-app-card-price span {
     color: rgb(68, 213, 68);
 }
-.billing-app .billing-app-card:last-child .billing-app-card-icon  span svg,
-.billing-app .billing-app-card:last-child .billing-app-card-price span  {
-    color: rgb(47,40,40);
+
+.billing-app .billing-app-card:last-child .billing-app-card-icon span svg,
+.billing-app .billing-app-card:last-child .billing-app-card-price span {
+    color: rgb(47, 40, 40);
 }
+
 .billing-app .billing-app-card .billing-app-card-info .billing-app-card-info-name {
     display: block;
     font-weight: bold;
-    font-size: 14px;
+    font-size: var(--font-x-medium);
 }
+
 .billing-app .billing-app-card .billing-app-card-info .billing-app-card-info-date {
     opacity: var(--opacity);
-    font-size: 13px;
+    font-size: var(--font-small);
 }
+
 .billing-app .billing-app-card .billing-app-card-price {
     text-align: right;
 }
+
 .billing-app .billing-app-card .billing-app-card-price span {
     font-weight: bold;
-    font-size: 14px;
+    font-size: var(--font-x-medium);
     opacity: var(--opacity);
+}
+
+@media (max-width: 575px) {
+    .billing-app {
+        padding: var(--padding-medium);
+    }
+
+    .billing-app .billing-app-info,
+    .billing-app .billing-app-newest,
+    .billing-app .billing-app-yesterday,
+    .billing-app .billing-app-card {
+        padding: var(--padding-larg) var(--padding-medium);
+    }
+
+    .billing-app .billing-app-info .billing-app-info-title h6,
+    .billing-app .billing-app-card .billing-app-card-info .billing-app-card-info-name {
+        font-size: var(--font-small);
+    }
+
+    .billing-app .billing-app-card .billing-app-card-icon span {
+        width: 20px;
+        height: 20px;
+    }
+
+    .billing-app .billing-app-card .billing-app-card-info {
+        padding: 0;
+    }
+
+    .billing-app .billing-app-info .billing-app-info-date span,
+    .billing-app .billing-app-card .billing-app-card-info .billing-app-card-info-date,
+    .billing-app .billing-app-card .billing-app-card-price span {
+        font-size: calc(var(--font-x-small) - 5px);
+    }
+
+    .billing-app .billing-app-card .billing-app-card-price {
+        padding: 0 5px;
+    }
 }

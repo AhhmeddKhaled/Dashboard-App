@@ -63,6 +63,7 @@ form .submit div {
   padding: 0;
 }
 form button[type="submit"] {
+  border: none;
   text-transform: uppercase;
   font-weight: bold;
   background: var(--main-color);
